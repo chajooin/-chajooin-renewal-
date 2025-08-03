@@ -1,0 +1,232 @@
+/* 내차 팔기 */
+
+.rentedCarAddContain {
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+}
+
+.rentedCarAddContain>.infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    background-color: #FFF;
+}
+
+.rentedCarAddContain>.infoBox>.contents-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rentedCarAddContain>.infoBox>.contents-box-g20 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rentedadd-button-box {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.rentedCarAddContain .detailBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    border-top: 1px solid #DDD
+}
+
+.rentedCarAddContain .detailBox>.row {
+    display: flex;
+    min-height: 56px;
+    gap: 12px;
+
+    border-bottom: 1px solid #DDD
+}
+
+.rentedCarAddContain .detailBox>.row>.title {
+    display: flex;
+    width: 120px;
+    /* height: 100%; */
+    flex-shrink: 0;
+    align-items: center;
+    padding: 20px 6px;
+
+    color: #666;
+    font-size: 16px;
+    background-color: #F1F1F1;
+    word-break: keep-all;
+}
+
+.rentedCarAddContain .detailBox>.row>.title.top {
+    align-items: start;
+    padding: 20px 6px;
+}
+
+.rentedCarAddContain .detailBox>.row>.value {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rentedCarAddContain .detailBox>.row>.value.column {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+    padding: 12px 0px;
+    gap: 12px;
+}
+
+.rentedCarAddContain .detailBox>.row>.value .value-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.rentedCarAddContain .detailBox>.row>.value textarea {
+    width: 100%;
+    margin: 8px 0px;
+    height: 200px;
+    padding: 12px;
+
+    font-size: 16px;
+    border-radius: 4px;
+    border-color: #DDD;
+
+    resize: none;
+}
+
+.rentedCarAddContain .detailBox>.row>.value .unit {
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.rentedCarAddContain .detailBox>.row>.value.column .priceBox {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+
+.rentedCarAddContain .detailBox>.row>.value.column .priceBox .input-50 {
+    width: 100%;
+}
+
+.rentedCarAddContain .detailBox>.row>.value.column .priceBox .unit {
+    width: 30%;
+}
+
+.rentedCarAddContain .box-data {
+    flex-direction: row;
+}
+
+.rentedCarAddContain .box-per-50 {
+    width: 50%;
+    display: flex;
+    gap: 8px;
+}
+
+.rentedCarAddContain .input-200 {
+    width: 200px;
+}
+
+.rentedCarAddContain .selector-200 {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.rentedCarAddContain .selector-140 {
+    width: 140px;
+}
+
+.rentedCarAddContain .add-image-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+@media (max-width: 800px) {
+
+    .rentedCarAddContain {
+        width: 100%;
+    }
+
+
+    .rentedCarAddContain>.infoBox {
+        padding: 20px;
+    }
+
+    .rentedCarAddContain .detailBox>.row>.value {
+        width: 100%;
+    }
+
+    .rentedCarAddContain .selector-200 {
+        width: 50%;
+    }
+
+    .rentedCarAddContain .selector-200.multi {
+        width: 40%;
+    }
+
+    .rentedCarAddContain .detailBox>.row>.value.column .priceBox .input-50 {
+        width: 100%;
+    }
+
+    .rentedCarAddContain .detailBox>.row>.value.column .priceBox .unit {
+        width: 30px;
+    }
+
+    .rentedCarAddContain .box-data {
+        flex-direction: column;
+        padding:10px 0px
+    }
+    
+    .rentedCarAddContain .box-per-50 {
+        width: 100%;
+    }
+
+    .rentedCarAddContain .selector-140 {
+        width: calc(100% / 3);
+    }
+
+    .rentedCarAddContain .input-200 {
+        width: 100%;
+    }
+
+    .rentedadd-button-box>.default-button:nth-child(1) {
+        width: 56px;
+        flex-shrink: 0;
+    }
+
+    .rentedadd-button-box>.default-button:nth-child(2) {
+        width: 100px;
+        flex-shrink: 0;
+    }
+
+    .rentedCarAddContain .detailBox>.row>.title {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .rentedCarAddContain .add-image-box {
+        gap: 5px;
+    }
+
+    .rentedCarAddContain .input_file_section {
+        width: 64px;
+        height: 64px;
+    }
+
+    .rentedCarAddContain * {
+        font-size: 14px;
+    }
+
+    .rentedCarAddContain button p {
+        font-size: 14px !important;
+    }
+}

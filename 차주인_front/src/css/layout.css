@@ -1,0 +1,2536 @@
+.global-titleBox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px;
+
+    border-bottom: 1px solid #DDD;
+}
+
+.global-titleBox.fixed {
+    position: fixed;
+    z-index: 10;
+    max-width: 800px;
+}
+
+.global-titleBox img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.global-titleBox .titleInfo {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-left: 8px;
+}
+
+.global-titleBox .titleInfo .text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.global-titleBox .titleInfo .text .count {
+    font-size: 20px;
+}
+
+.global-titleBox .titleInfo .view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 20px;
+}
+
+.global-titleBox .titleInfo .view img {
+    width: 20px;
+    height: 20px;
+
+    font-size: 20px;
+}
+
+.global-titleBox .titleInfo .view .count {}
+
+.global-titleBox .likeInfo {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.global-titleBox .likeInfo img {
+    width: 24px;
+    height: 24px;
+}
+
+.global-titleBox .likeInfo .text {
+    font-size: 20px;
+}
+
+.my-nav-contain {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.my-nav-contain>.title {
+    font-size: 16px;
+    color: #999;
+}
+
+.my-nav-contain>.title.select {
+    font-weight: 700;
+    color: #2F3444;
+}
+
+.my-nav-contain>.title.link {
+    cursor: pointer;
+}
+
+.my-nav-contain>img {
+    width: 16px;
+    height: 16px;
+}
+
+/* 분리 ++++ */
+.input-icon-check-box {
+    display: flex;
+    gap: 4px;
+    user-select: none;
+}
+
+.input-icon-check-box>.label {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    background: url("../images/fa6-solid.svg") no-repeat center center;
+    background-size: 20px;
+}
+
+.input-icon-check-box>.label.select {
+    background: url("../images/fa6-solid-check.svg") no-repeat center center;
+}
+
+.input-icon-check-box>.text {
+    font-weight: 400;
+    color: #2F3444;
+    cursor: pointer;
+}
+
+.input-icon-check-box>.text.select {
+    font-weight: 700;
+    color: #3B4894;
+}
+
+/* 분리 ---- */
+
+.bottom-menu-contain {
+    position: fixed;
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+
+    background-color: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+
+    z-index: 99;
+}
+
+.bottom-menu-contain>.menu-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    cursor: pointer;
+}
+
+.bottom-menu-contain>.menu-box>.icon-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+}
+
+.bottom-menu-contain>.menu-box>.icon-box img {
+    width: 24px;
+    height: 24px;
+}
+
+.bottom-menu-contain>.menu-box>.icon-box>.count {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    width: 22px;
+    height: 14px;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 100px;
+    background: var(--Red, #F00);
+}
+
+.loginCotain {
+    width: 100%;
+    display: flex;
+    padding: 60px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.loginCotain>.loginBox {
+    display: flex;
+    width: 500px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.loginCotain>.loginBox>.title {
+    align-self: stretch;
+
+    color: #2F3444;
+    text-align: center;
+
+    /* Cat_Title */
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.loginCotain>.loginBox>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.loginCotain>.loginBox>.info>.text {
+    color: #2F3444;
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.loginCotain>.loginBox>.info>.text>.point {
+    color: #3B4894;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.loginCotain>.loginBox>.buttonBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.loginCotain>.loginBox>.buttonBox>.button {
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginCotain>.loginBox>.buttonBox>.kakao {
+    border-radius: 8px;
+    background: #F9E000;
+
+    color: #401C26;
+    text-align: center;
+
+}
+
+.loginCotain>.loginBox>.buttonBox>.naver {
+    border-radius: 8px;
+    background: #2DB400;
+
+    color: var(--White, #FFF);
+    text-align: center;
+
+
+}
+
+/* 홈 화면 */
+
+.mainContain {
+    width: 100%;
+    /* max-width: 1200px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContain .bgboxW {
+    width: 100%;
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: center;
+}
+
+.mainContain .bgboxN {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContain .slideBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    margin-top: 32px;
+    width: 1200px;
+}
+
+.mainContain .soloCard {
+    display: flex;
+    width: 100%;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+
+    border-radius: 20px;
+    border: 1px solid var(--Grey_E, #EEE);
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.mainContain .menuBox {
+    display: flex;
+    padding: 80px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    width: 1200px;
+}
+
+
+
+.mainContain .menuBox .card {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+
+    border-radius: 20px;
+    border: 1px solid var(--Grey_E, #EEE);
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.mainContain .menuBox .buttonBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.mainContain .menuBox .buttonBox .button {
+    display: flex;
+    width: 128px;
+    height: 128px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 100px;
+    background: #EFF1FF;
+
+    cursor: pointer;
+}
+
+.mainContain .menuBox .buttonBox .button img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.mainContain .menuBox .buttonBox .bgSearch {
+    background: #EFF1FF;
+}
+
+.mainContain .menuBox .buttonBox .bgAction {
+    background: #FFEDE9;
+}
+
+.mainContain .freightBox {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    align-items: start;
+    padding: 80px 0px;
+    gap: 24px;
+}
+
+.mainContain .freightBox .title {
+    width: 100%;
+}
+
+.mainContain .freightBox .cardBox {
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch; */
+}
+
+.mainContain .freightBox .rowBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.freight-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    border: 1px solid var(--Grey_E, #EEE);
+    background: #FFF;
+    overflow: hidden;
+    width: 386px;
+    flex-shrink: 0;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+/* .main-swiper-box .freight-card:nth-child(2n) {
+    margin-top: 20px;
+}
+
+.main-swiper-box .freight-card:nth-child(n+3) {
+    margin-left: 20px;
+}
+
+.main-swiper-box.one-line .freight-card:nth-child(2n) {
+    margin-top: 0px;
+}
+
+.main-swiper-box.one-line .freight-card:nth-child(n+3) {
+    margin-left: 0px;
+}
+
+.main-swiper-box.one-line .freight-card:nth-child(n+2) {
+    margin-left: 20px;
+} */
+
+
+
+.freight-card .lightning {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 36px;
+    height: 36px;
+}
+
+
+.freight-card img {
+    display: flex;
+    height: 240px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.freight-card .info {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.freight-card .info .infoTitle {
+    align-self: stretch;
+    width: 100%;
+    /* overflow: ellipsis; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.freight-card .info .infoSubTitle {
+    align-self: stretch;
+}
+
+.freight-card .info .infoPrice {
+    align-self: stretch;
+    text-align: right;
+}
+
+.main-swiper-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    /* height: 760px; */
+    /* overflow-y: scroll; */
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* .main-swiper-box.one-line {
+    height: 360px;
+} */
+
+.main-swiper-box::--webkit-scrollbar {
+    display: none;
+}
+
+.main-swiper-contain {
+    position: relative;
+}
+
+.main-swiper-contain .btn-left {
+    position: absolute;
+    width: 36px;
+    top: -56px;
+    right: 72px;
+    z-index: 1;
+
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.main-swiper-contain .btn-right {
+    position: absolute;
+    width: 36px;
+    top: -56px;
+    right: 0;
+    z-index: 1;
+
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+
+/* 지입차 추천 */
+.mainContain .salecarBox {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    padding: 80px 0px;
+    gap: 24px;
+}
+
+.mainContain .salecarBox .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContain .salecarBox .scrollBox {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.mainContain .salecarBox .rowBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 484px; */
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard {
+    display: flex;
+    width: 100%;
+    height: 232px;
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FFF;
+
+    cursor: pointer;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 32px;
+    gap: 24px;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info .content-f {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info .content-s {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info .content-s .cinfo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info .content-s .cinfo .ci-title {
+    width: 80px;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info .content-s .cinfo .ci-text {
+    width: 100%;
+    max-width: 440px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info .type {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #D7E7FF;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .info .price {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mainContain .salecarBox .rowBox .salecarCard .infoBox .adBox {
+    width: 100%;
+    padding: 12px 20px;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: 8px;
+    background: #F1F1F1;
+
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .photo {
+    position: relative;
+    display: flex;
+    padding: 20px;
+
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .photo .lightning {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 36px;
+    height: 36px;
+    border: none;
+}
+
+.mainContain .salecarBox .rowBox .salecarCard .photo .thumb {
+    width: 250px;
+    height: 192px;
+    border: 1px solid #EEE;
+}
+
+/* 조건 추천 */
+.mainContain .recommandBox {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    padding: 80px 0px;
+    gap: 24px;
+}
+
+.mainContain .recommandBox .title-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.mainContain .recommandBox .title-btn .ttitle {
+    width: 100%
+}
+
+.mainContain .recommandBox .title-btn .reset-btn {
+    display: flex;
+    width: 140px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 1px solid #3B4894;
+    background: #FFF;
+}
+
+.mainContain .recommandBox .title-btn .reset-btn .reset {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.mainContain .recommandBox .conditionBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 40px; */
+    gap: 20px;
+    align-self: stretch;
+}
+
+.mainContain .recommandBox .conditionBox>.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mainContain .recommandBox .conditionBox .scrollBox {
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.mainContain .recommandBox .conditionBox .scrollBox .contents {
+    display: flex;
+    gap: 20px;
+}
+
+.mainContain .move-arrow-box {
+    position: absolute;
+    width: calc(100% + 68px);
+    top: calc(50% - 31px);
+    left: -31px;
+    z-index: 1;
+}
+
+.mainContain .recommandBox .conditionBox .conditionCard {
+    display: flex;
+    width: 590px;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FFF;
+
+    cursor: pointer;
+}
+
+
+.mainContain .recommandBox .conditionBox .conditionCard img {
+    width: 100%;
+    aspect-ratio: 1.6;
+}
+
+.mainContain .recommandBox .conditionBox .conditionCard .reInfo {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContain .recommandBox .conditionBox .conditionCard .reInfo .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    padding-left: 0px;
+}
+
+.mainContain .recommandBox .conditionBox .conditionCard .reInfo .suTitle {
+    margin-top: 4px;
+}
+
+.mainContain .recommandBox .conditionBox .conditionCard .reInfo .price {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContain .recommandBox .conditionBox .conditionCard .reInfo .price .option {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #D7E7FF;
+}
+
+.mainContain .recommandBox .conditionBox .moreBox {
+    display: flex;
+    width: 240px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #3B4894;
+    background: #FFF;
+    margin-top: 20px;
+}
+
+.mainContain .recommandBox .conditionBox .moreBox .r-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* 조건 로그인 알림 */
+.mainContain .recommandBox .loginBox {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FFF;
+}
+
+.mainContain .recommandBox .loginBox .joinBtn {
+    display: flex;
+    width: 240px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    cursor: pointer;
+    border-radius: 4px;
+    background: #3b4894;
+}
+
+/* 조건 입력창 */
+.mainContain .recommandBox .findBox {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FFF;
+}
+
+.mainContain .recommandBox .findBox .tabSelector {
+    display: flex;
+    width: 100%;
+}
+
+.mainContain .recommandBox .findBox .tabSelector .tab {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid #DDD;
+    color: #999;
+    cursor: pointer;
+}
+
+.mainContain .recommandBox .findBox .tabSelector .select {
+    border-top: 1px solid var(--Primary, #3B4894);
+    border-right: 1px solid var(--Primary, #3B4894);
+    border-left: 1px solid var(--Primary, #3B4894);
+    color: #3B4894;
+    border-bottom: none;
+}
+
+.mainContain .recommandBox .findBox .tabBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+}
+
+.mainContain .recommandBox .findBox .tabBody .tabBodyRow {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #DDD;
+}
+
+.mainContain .recommandBox .findBox .tabBody .tabBodyRow .tbrTitle {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 120px;
+    min-height: 56px;
+    padding: 0px 12px;
+    background: #F1F1F1
+}
+
+.mainContain .recommandBox .findBox .tabBody .tabBodyRow .tbrInfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px;
+    gap: 12px;
+}
+
+.mainContain .recommandBox .findBox .tabBody .tabBodyRow .tbrInfo .selBox {
+    width: 240px;
+}
+
+.mainContain .recommandBox .findBox .tabFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* .mainContain .recommandBox .findBox .tabFooter .tabInfo {} */
+
+.mainContain .recommandBox .findBox .tabFooter .tabBtn {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    width: 340px;
+    /* width: 240px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    background: #3B4894;
+    cursor: pointer; */
+}
+
+.mainContain .partnerBox {
+    display: flex;
+    padding: 80px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.mainContain .partnerBox .title {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.mainContain .partnerBox .pSlideBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    width: 1200px;
+}
+
+.mainContain .partnerBox .notiBox {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #DDD;
+}
+
+.mainContain .partnerBox .notiBox .callBox {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 32px;
+    gap: 20px;
+}
+
+.mainContain .partnerBox .notiBox .callBox .callInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.mainContain .partnerBox .notiBox .callBox .callInfo .iconBox {
+    display: flex;
+    padding: 22px;
+    border-radius: 20px;
+    background: var(--Background, #F2F4F7);
+}
+
+.mainContain .partnerBox .notiBox .callBox .callInfo .tellInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mainContain .partnerBox .notiBox .listBox {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    /* border-left: 1px solid #DDD; */
+}
+
+.mainContain .partnerBox .notiBox .listBox .listItem {
+    display: flex;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+
+.mainContain .partnerBox .notiBox .listBox .listItem:nth-child(n+2) {
+    border-top: 1px solid #EEE;
+}
+
+.mainContain .partnerBox .notiBox .listBox .listItem .text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.mainContain .partnerBox .notiBox .listBox .listItem .date {
+    display: flex;
+    width: 100px;
+    justify-content: end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.mainContain .partnerBox .reportBox {
+    display: flex;
+    width: 100%;
+    padding: 40px 80px;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 20px;
+    background: #FFF2F1;
+}
+
+.mainContain .partnerBox .reportBox .infoText {
+    display: flex;
+    gap: 20px;
+}
+
+.mainContain .partnerBox .reportBox .infoText .repoTitle {
+    display: flex;
+    width: 160px;
+    word-break: keep-all;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.mainContain .partnerBox .reportBox .infoText .repoInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mainContain .partnerBox .reportBox .infoText .repoInfo .infoText {
+    display: flex;
+    gap: 6px
+}
+
+.mainContain .partnerBox .reportBox .infoText .repoInfo .infoText:before {
+    content: "•";
+    margin-left: 6px;
+}
+
+
+.mainContain .partnerBox .reportBox .reportBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background: #DB4E4E;
+
+    cursor: pointer;
+}
+
+.mainContain .mobileCardMenu {
+    display: none;
+}
+
+/**
+    중고 화물차 +++++
+*/
+
+.usedContain {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    min-height: 500px;
+}
+
+.usedContain .categoryBox {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+
+.usedContain .categoryBox .categoryBtn {
+    padding: 12px 20px;
+    background-color: #EEE;
+    border-radius: 100px;
+    color: #666;
+    cursor: pointer;
+}
+
+.usedContain .categoryBox .select {
+    background-color: #3B4894;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.usedContain .subCategoryBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.usedContain .subCategoryBox .selBox {
+    display: flex;
+    width: 180px;
+}
+
+.usedContain .subCategoryBox .sellbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    flex-shrink: 0;
+    gap: 4px;
+
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 4px;
+    background: #3B4894;
+}
+
+.usedContain .subCategoryBox .sellbtn img {
+    width: 24px;
+    height: 24px;
+}
+
+.usedContain .cardBox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.usedContain .cardBox .card {
+    position: relative;
+    display: flex;
+    width: calc(50% - 10px);
+    flex-direction: column;
+
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.usedContain .cardBox .card .carImage {
+    width: 100%;
+    height: 218px;
+}
+
+.usedContain .cardBox .card .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.usedContain .cardBox .card .info .infoTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2F3444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.usedContain .cardBox .card .info .infoSubTitle {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+.usedContain .cardBox .card .info .infoPrice {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.usedContain .cardBox .card .soldout-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    height: 218px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.usedContain .cardBox .card .info .status-box {
+    position: absolute;
+    display: flex;
+    left: 20px;
+    bottom: 15px;
+    gap: 7px;
+}
+
+.usedContain .cardBox .card .info .addNumber {
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: #3B4894;
+    border-radius: 100px;
+    background: #D7E7FF;
+}
+
+.usedContain .cardBox .card .info .saveTag {
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: #333;
+    border-radius: 100px;
+    background: #ddd;
+}
+
+/* .usedContain .cardBox .card .info .addNumber {
+    position: absolute;
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+    bottom: 20px;
+
+    font-size: 14px;
+    color: #3B4894;
+    border-radius: 100px;
+    background: #D7E7FF;
+} */
+
+/**
+    중고 화물차 -----
+*/
+
+.usedInfoContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+    margin-bottom: 40px;
+}
+
+.usedInfoContain .swiperBox .imgLongBox {
+    padding: 20px 0px 20px 20px;
+}
+
+.usedInfoContain .swiperBox .smallImg {
+    width: 72px;
+    height: 72px;
+}
+
+.usedInfoContain .infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: #FFF;
+    padding: 40px;
+}
+
+.usedInfoContain .carInfoBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.usedInfoContain .carInfoBox .state {
+    margin-top: 8px;
+    border-radius: 100px;
+    padding: 4px 12px;
+    background: #DDD;
+    color: #999;
+}
+
+.usedInfoContain .carInfoBox .info {
+    margin-top: 12px;
+    color: #666;
+}
+
+.usedInfoContain .carInfoBox .subInfo {
+    display: flex;
+    margin-top: 20px;
+    color: #666;
+    gap: 40px;
+}
+
+.used-circle-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.used-circle-card>.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+
+    font-size: 16px;
+    font-weight: 700;
+    gap: 4px;
+    border-radius: 100px;
+    background: #F2F4F7;
+}
+
+.used-circle-card>.circle>img {
+    width: 36px;
+    height: 36px;
+}
+
+.used-circle-card>.circle>.number {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: #3B4894;
+    border-radius: 100px;
+    background: #D7E7FF;
+}
+
+.used-circle-card>.text {
+    color: #666;
+}
+
+.usedInfoContain .carInfoBox .msg {
+    margin-top: 20px;
+    color: #666;
+}
+
+.usedInfoContain .sellerInfoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.seller-report-btn {
+    display: flex;
+    justify-content: end;
+    width: 100px;
+}
+
+.used-seller-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.used-seller-info>.iconBox {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #EEE;
+}
+
+.used-seller-info>.iconBox img {
+    width: 80px;
+    height: 80px;
+}
+
+.used-seller-info>.detailInfoBox img {
+    width: 40px;
+    height: 40px;
+}
+
+.used-seller-info>.detailInfoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.used-seller-info>.detailInfoBox>.info {
+    display: flex;
+
+}
+
+.used-seller-info>.detailInfoBox>.info .title {
+    width: 60px;
+    flex-shrink: 0;
+
+    color: #666;
+    font-size: 16px;
+}
+
+.used-seller-info>.detailInfoBox>.info .text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.used-seller-btnbox {
+    display: flex;
+    align-items: center;
+    width: 248px;
+    height: 40px;
+    gap: 8px;
+}
+
+.usedInfoContain .button {
+    display: flex;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #3B4894;
+}
+
+.usedInfoContain .white {
+    background-color: #FFF;
+    color: var(--Primary, #3B4894);
+    border: 1px solid #3B4894;
+}
+
+.used-default-info {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #DDD
+}
+
+.used-default-info>.detailBox {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.used-default-info>.detailBox>.row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 12px;
+
+    border-bottom: 1px solid #DDD
+}
+
+.used-default-info>.detailBox>.row>.title {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0px 12px;
+
+    color: #666;
+    font-size: 14px;
+    background-color: #F1F1F1;
+}
+
+.used-default-info>.detailBox>.row>.text {
+    color: #2F3444;
+    font-size: 14px;
+}
+
+.used-price-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.used-price-info>.row-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.used-price-info>.row-price>.title {
+    display: flex;
+    font-size: 16px;
+    color: #666;
+}
+
+.used-price-info>.row-price .number {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 12px;
+
+    font-size: 14px;
+    color: #3B4894;
+    border-radius: 100px;
+    background: #D7E7FF;
+}
+
+.used-price-info>.row-price>.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.used-price-info>.row-total {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.used-price-info>.row-total>.title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.used-price-info>.row-total>.price {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.used-option-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.used-option-info>.sub-option {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.used-option-info>.sub-option>.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.used-option-info>.sub-option>.list {
+    display: flex;
+    gap: 20px;
+}
+
+.used-detail-info {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.used-detail-info>.car-image {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.used-paper-call {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.used-paper-btnBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.used-paper-btnBox>.used-paper-box {
+    width: 240px;
+}
+
+.used-paper-btnBox>.used-call-box {
+    display: flex;
+    width: 240px;
+    gap: 8px;
+}
+
+.used-paper-call-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+
+    border-radius: 4px;
+    background: #F1F3FF;
+}
+
+.used-paper-call-info>.bold {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.used-paper-call-info>.info {
+    line-height: 20px;
+}
+
+.used-paper-call-info>.info ol {
+    padding-inline-start: 20px;
+    margin: 0px;
+}
+
+.used-paper-call-info>.info li {
+    font-size: 14px;
+    list-style: decimal;
+}
+
+.used-paper-call-info>.red {
+    color: #F00;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.used-paper-call-edit>.edit-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-top: 20px;
+    border-top: 1px solid #DDD;
+}
+
+.used-paper-call-edit>.edit-box .edit-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 1px solid #DDD;
+}
+
+.used-paper-call-edit>.edit-box>.edit-row>.title {
+    display: flex;
+    /* align-items: center; */
+    width: 120px;
+    color: #666;
+    flex-shrink: 0;
+    padding: 18px 12px;
+
+    background-color: #F1F1F1;
+}
+
+.used-paper-call-edit>.edit-box>.edit-row>.input-box {
+    display: flex;
+    align-items: center;
+    color: #666;
+
+    gap: 8px;
+}
+
+.used-paper-call-edit>.edit-box>.edit-row>.input-box .inputs {
+    width: 300px;
+}
+
+.used-paper-call-edit>.edit-box>.edit-row>.input-box .selBox {
+    width: 148px;
+}
+
+.used-paper-call-edit>.edit-box>.edit-row>.input-box .text {
+    width: 500px;
+    margin: 8px 0px;
+    min-height: 180px;
+    padding: 12px;
+
+    font-size: 16px;
+    border-radius: 4px;
+    border-color: #DDD;
+
+    resize: none;
+}
+
+.used-confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.used-confirm>.info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+/* 신고하기 */
+
+.report-contain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-bottom: 40px;
+}
+
+.report-contents-box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px;
+}
+
+.report-contents-box>.contents-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.report-contents-box>.contents-box>.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.report-contents-box>.contents-box .sub-title {
+    font-size: 14px;
+}
+
+.report-contents-box>.contents-box .red {
+    font-size: 14px;
+    color: #F00;
+}
+
+.report-contents-box>.contents-box>.text-box {
+    width: 100%;
+    margin: 8px 0px;
+    height: 200px;
+    padding: 12px;
+
+    font-size: 16px;
+    border-radius: 4px;
+    border-color: #DDD;
+
+    resize: none;
+}
+
+.report-contents-box>.contents-box>.img-box {
+    display: flex;
+    gap: 8px;
+}
+
+.report-contents-box>.contents-box>.img-box>.add-box {
+    display: flex;
+    flex-direction: column;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+
+    background: #EEE;
+}
+
+.report-contents-box>.contents-box>.img-box>.add-box img {
+    width: 20px;
+    height: 20px;
+    background: #EEE;
+}
+
+.report-contents-box>.contents-box>.img-box>.image {
+    position: relative;
+
+    width: 64px;
+    height: 64px;
+}
+
+.report-contents-box>.contents-box>.img-box>.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.report-contents-box>.contents-box>.img-box>.image .x-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 800px) {
+    .header-title-36 {
+        font-size: 24px;
+    }
+
+    .header-title-32 {
+        font-size: 24px;
+    }
+
+    .header-title-24 {
+        font-size: 20px;
+    }
+
+    .usedContain {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+
+    .usedContain .subCategoryBox .sellbtn {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .usedContain .cardBox .card {
+        width: 100%;
+    }
+
+    .usedContain .cardBox .card .carImage {
+        /* height: auto; */
+    }
+
+    .usedContain .categoryBox {
+        overflow-x: scroll;
+    }
+
+    .usedContain .subCategoryBox .selBox {
+        /* display: flex; */
+        width: 110px;
+    }
+
+    .usedContain .categoryBox .categoryBtn {
+        flex-shrink: 0;
+    }
+
+    .usedInfoContain {
+        width: 100%;
+    }
+
+    .usedInfoContain .infoBox {
+        padding: 20px;
+    }
+
+    .usedInfoContain .swiperBox .imgLongBox {
+        padding: 8px 0px 8px 8px;
+        overflow: hidden;
+    }
+
+    .usedInfoContain .swiperBox .smallImg {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .usedInfoContain .carInfoBox .subInfo {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .usedInfoContain .carInfoBox .msg {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        word-break: keep-all;
+
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        text-wrap: balance;
+    }
+
+    .used-seller-info>.detailInfoBox>.info .title {
+        font-size: 14px;
+    }
+
+    .used-seller-info>.detailInfoBox>.info .text {
+        font-size: 14px;
+    }
+
+    .usedInfoContain .sellerInfoBox {
+        flex-direction: column;
+    }
+
+    .used-seller-btnbox {
+        width: 100%;
+    }
+
+    .used-default-info {
+        flex-direction: column;
+    }
+
+    .used-default-info>.detailBox {
+        width: 100%;
+    }
+
+    .used-price-info>.row-price>.title {
+        font-size: 14px;
+    }
+
+    .used-price-info>.row-price .number {
+        font-size: 12px;
+    }
+
+    .used-price-info>.row-price>.price {
+        font-size: 14px;
+    }
+
+    .used-price-info>.row-total>.title {
+        font-size: 16px;
+    }
+
+    .used-price-info>.row-total>.price {
+        font-size: 16px;
+    }
+
+    .used-option-info>.sub-option>.title {
+        font-size: 16px;
+    }
+
+    .used-detail-info>.text {
+        font-size: 14px;
+    }
+
+    .used-detail-info>.car-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1.6;
+    }
+
+    .used-paper-btnBox {
+        flex-direction: column;
+        gap: 12px
+    }
+
+    .used-paper-call-info>.red {
+        font-size: 12px;
+    }
+
+    .used-paper-call-edit>.edit-box>.edit-row>.title {
+        font-size: 14px;
+    }
+
+    .used-paper-call-edit>.edit-box>.edit-row>.input-box {
+        width: 100%;
+    }
+
+    .used-paper-call-edit>.edit-box>.edit-row>.input-box .text {
+        font-size: 14px;
+    }
+
+    .used-confirm>.info {
+        font-size: 14px;
+    }
+
+    .used-paper-btnBox>.used-paper-box {
+        width: 100%;
+    }
+
+    .used-paper-btnBox>.used-call-box {
+        width: 100%;
+    }
+
+    .used-paper-call-edit>.edit-box>.edit-row>.input-box .inputs {
+        width: 100%;
+    }
+
+    .used-paper-call-edit>.edit-box>.edit-row>.input-box .selBox {
+        width: 100%;
+    }
+
+    .used-paper-call-edit>.edit-box>.edit-row>.input-box .text {
+        width: 100%;
+    }
+
+    .report-contain {
+        width: 100%;
+    }
+
+    .report-contents-box>.contents-box>.title {
+        font-size: 16px;
+    }
+
+    .report-contents-box>.contents-box>.list-box p {
+        font-size: 14px !important;
+    }
+
+    .report-contents-box>.contents-box>.text-box {
+        font-size: 14px;
+    }
+
+    .global-titleBox {
+        /* position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100%; */
+        height: 56px;
+    }
+
+
+    .global-titleBox .titleInfo .text {
+        font-size: 16px;
+    }
+
+    .global-titleBox .titleInfo .view .count {
+        font-size: 14px;
+    }
+
+    .global-titleBox .likeInfo .text {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .bottom-menu-contain {
+        display: flex;
+    }
+
+    .default-button {
+        font-size: 14px;
+    }
+
+    .default-button.large {
+        height: 56px;
+        font-size: 20px;
+    }
+
+    .loginCotain {
+        padding: 0px;
+    }
+
+    .loginCotain>.loginBox {
+        width: 100%;
+        padding: 100px 20px 100px 20px;
+        border-radius: 0px;
+    }
+
+    .mainContain .fontsize32 {
+        font-size: 24px;
+    }
+
+    .mainContain .slideBox {
+        width: 100%;
+        margin-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .mainContain .webCardMenu {
+        display: none;
+    }
+
+    .mainContain .mobileCardMenu {
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 32px;
+    }
+
+    .mainContain .menuBox .card {
+        flex-direction: column;
+        width: calc(100% - 40px);
+        margin: 0px 20px;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .mainContain .menuBox .card .fontsize24 {
+        font-size: 20px;
+    }
+
+    .mainContain .menuBox .buttonBox .button {
+        width: 100px;
+        height: 100px;
+        gap: 8px;
+    }
+
+    .mainContain .menuBox .buttonBox .button img {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+
+    .mainContain .menuBox .buttonBox .button .fontsize16 {
+        font-size: 14px;
+    }
+
+
+    .mainContain .freightBox {
+        width: 100%;
+        padding: 32px 0px;
+    }
+
+    .mainContain .freightBox .title {
+        width: calc(100% - 40px);
+        margin: 0px 20px
+    }
+
+    .mainContain .freightBox .cardBox {
+        overflow-x: scroll;
+
+    }
+
+    .mainContain .freightBox .rowBox {
+        width: 1920px;
+        flex-wrap: nowrap;
+        margin-left: 20px;
+    }
+
+    .freight-card {
+        width: 300px;
+        /* margin-left: 8px !important; */
+    }
+
+    /* .freight-card:first-child {
+        margin-left: 20px !important;
+    }
+
+    .freight-card:nth-child(2n) {
+        margin-top: 0px !important;
+    }
+
+    .freight-card:nth-child(n+3) {
+        margin-left: 0px;
+    } */
+
+    .freight-card img {
+        height: 186px;
+        min-height: 186px;
+    }
+
+    .freight-card .lightning {
+        height: 36px;
+        min-height: 36px;
+    }
+
+    .main-swiper-box {
+        display: flex;
+        height: 304px;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+
+        scrollbar-width: auto;
+        -ms-overflow-style: auto;
+    }
+
+    .main-swiper-box.one-line {
+        height: 304px;
+    }
+
+    .main-swiper-box::--webkit-scrollbar {
+        display: block;
+    }
+
+    .main-swiper-contain {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .main-swiper-contain .btn-left {
+        display: none;
+    }
+
+    .main-swiper-contain .btn-right {
+        display: none;
+    }
+
+    .mainContain .salecarBox {
+        width: 100%;
+        padding: 32px 0px;
+    }
+
+    .mainContain .salecarBox .title {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .mainContain .salecarBox .scrollBox {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .mainContain .salecarBox .rowBox {
+        width: auto;
+        flex-direction: row;
+        margin-left: 20px;
+        height: 500px;
+        gap: 20px;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard {
+        flex-direction: column-reverse;
+        justify-content: start;
+        width: 300px;
+        min-width: 300px;
+        height: 500px;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .photo {
+        width: 100%;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .photo .thumb {
+        width: 100%;
+        height: 200px;
+        border: 1px solid #EEE;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .infoBox {
+        width: 100%;
+        padding: 0px 20px;
+        gap: 20px;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .infoBox .info {
+        flex-direction: column;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .infoBox .info .content-f {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .infoBox .info .type {
+        font-size: 12px
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .infoBox .info .price {
+        margin-top: 0px;
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .infoBox .info .price .fontsize36 {
+        font-size: 24px
+    }
+
+    .mainContain .salecarBox .rowBox .salecarCard .infoBox .info .price .fontsize20 {
+        font-size: 12px
+    }
+
+    .mainContain .recommandBox {
+        padding: 32px 0px;
+        width: 100%;
+    }
+
+    .mainContain .recommandBox .title-btn {
+        padding: 0px 20px;
+    }
+
+    .mainContain .recommandBox .title-btn .reset-btn {
+        width: 120px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .mainContain .recommandBox .conditionBox .scrollBox {
+        width: 100%;
+        overflow-x: scroll;
+        padding-left: 20px;
+    }
+
+    .mainContain .recommandBox .conditionBox .conditionCard {
+        width: 300px;
+    }
+
+    .mainContain .recommandBox .conditionBox>.title {
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+
+    .mainContain .recommandBox .conditionBox .moreBox {
+        margin-top: 0px;
+    }
+
+    .mainContain .move-arrow-box {
+        display: none;
+    }
+
+    .mainContain .salecarBox .move-arrow {
+        display: none;
+    }
+
+    .mainContain .recommandBox .conditionBox .move-arrow {
+        display: none;
+    }
+
+    .mainContain .partnerBox {
+        width: 100%;
+        padding: 20px;
+        gap: 0px;
+    }
+
+    .mainContain .partnerBox .title {
+        margin-bottom: 20px;
+    }
+
+    .mainContain .partnerBox .pSlideBox {
+        width: 100%;
+    }
+
+    .mainContain .partnerBox .pSlideBox button {
+        display: none;
+    }
+
+    .mainContain .partnerBox .notiBox {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox {
+        border-left: none;
+        border-top: 1px solid #DDD;
+    }
+
+    .mainContain .recommandBox .title {
+        /* padding: 0px 20px;  */
+        padding-left: 20px;
+    }
+
+    .mainContain .recommandBox .findBox {
+        /* display: none; */
+        padding: 20px;
+    }
+
+    .mainContain .recommandBox .findBox .tabBody .tabBodyRow .tbrTitle {
+        width: 80px;
+        font-size: 14px;
+        text-wrap: pretty;
+    }
+
+    .mainContain .recommandBox .findBox .tabBody .tabBodyRow .tbrInfo .selBox {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .mainContain .recommandBox .loginBox {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin: 0px 20px;
+    }
+
+    .mainContain .recommandBox .loginBox .fontsize24 {
+        font-size: 20px;
+    }
+
+
+    /* 파트너 */
+    .mainContain .partnerBox .notiBox .callBox {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .mainContain .partnerBox .notiBox .callBox .fontsize24 {
+        font-size: 20px;
+    }
+
+    .mainContain .partnerBox .notiBox .callBox .fontsize36 {
+        font-size: 24px;
+    }
+
+    .mainContain .partnerBox .notiBox .callBox .fontsize16 {
+        font-size: 14px;
+    }
+
+    .mainContain .partnerBox .notiBox .callBox .callInfo .iconBox {
+        padding: 16px
+    }
+
+    .mainContain .partnerBox .notiBox .callBox .callInfo .tellInfo {
+        gap: 4px;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox {
+        padding: 20px;
+        gap: 8px;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox .listItem {
+        padding: 8px 0px;
+        cursor: pointer;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox .listItem .fontsize16 {
+        font-size: 14px;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox .listItem .fontsize14 {
+        font-size: 12px;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox .fontsize24 {
+        font-size: 20px;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox .fontsize36 {
+        font-size: 24px;
+    }
+
+    .mainContain .partnerBox .notiBox .listBox .fontsize16 {
+        font-size: 14px;
+    }
+
+    .mainContain .partnerBox .reportBox {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 20px;
+        gap: 12px;
+        align-items: start;
+    }
+
+    .mainContain .partnerBox .reportBox .infoText {
+        flex-direction: column;
+    }
+
+    .mainContain .partnerBox .reportBox .infoText .repoTitle {
+        width: 100%;
+    }
+
+    .mainContain .partnerBox .reportBox .infoText .fontsize32 {
+        font-size: 20px;
+    }
+
+    .mainContain .partnerBox .reportBox .infoText .repoInfo .infoText {
+        flex-direction: row;
+        font-size: 12px;
+    }
+
+    .mainContain .partnerBox .reportBox .reportBtn {
+        width: 100%;
+        height: 40px;
+        flex-direction: row;
+        border-radius: 8px;
+
+        cursor: pointer;
+    }
+
+    .mainContain .partnerBox .reportBox .reportBtn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mainContain .partnerBox .reportBox .reportBtn .fontsize20 {
+        font-size: 16px;
+    }
+
+}

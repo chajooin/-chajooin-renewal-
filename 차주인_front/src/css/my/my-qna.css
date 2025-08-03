@@ -1,0 +1,81 @@
+.myQNAContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* margin: 20px 0px; */
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.myQNAContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    background-color: #FFF;
+}
+
+.myQNAContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+.myQNAContain .infoBox .line {
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+}
+
+.myQNAContain .contents {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.myQNAContain .contents .menu-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.myQNAContain .contents .menu-box>.menu-item {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 calc(33.3333% - 0.6666px);
+    padding: 20px 0px;
+
+    font-size: 16px;
+    color: #999;
+    background: #F1F1F1;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.myQNAContain .contents .menu-box>.menu-item.select {
+    border: 1px solid #3B4894;
+    font-weight: 700;
+    color: #3B4894;
+    background: #FFF;
+}
+
+.myQNAContain .contents .list-box img {
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+    .myQNAContain {
+        width: 100%;
+        margin: 0;
+    }
+
+    .myQNAContain .infoBox {
+        padding: 20px
+    }
+
+    .myQNAContain .contents .menu-box>.menu-item {
+        padding: 12px 0px;
+    }
+}

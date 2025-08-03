@@ -1,0 +1,201 @@
+.myPointContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* margin: 20px 0px; */
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.myPointContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+    background-color: #FFF;
+}
+
+
+.myPointContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+.myPointContain .infoBox .line {
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+}
+
+.myPointContain .infoBox .contents {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myPointContain .infoBox .point-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.myPointContain .infoBox .point-box .btn-box {
+    display: flex;
+    width: 248px;
+    gap: 8px;
+}
+
+.myPointContain .infoBox .point-box .info {
+    display: flex;
+    align-items: center;
+}
+
+.myPointContain .infoBox .point-box .info .title {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 4px;
+}
+
+.myPointContain .infoBox .point-box .info .title.point::before {
+    content: url("../../images/copper-coin-line.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.myPointContain .infoBox .point-box .info .price {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-size: 32px;
+    font-weight: 700;
+    color: #3B4894;
+}
+
+.myPointContain .infoBox .list-box {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.myPointContain .tab-menu-box {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.myPointContain .tab-menu-box .tab-menu {
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #999;
+    font-size: 20px;
+    border-bottom: 1px solid #DDD;
+
+    cursor: pointer;
+}
+
+.myPointContain .tab-menu-box .tab-menu.select {
+    color: #3B4894;
+    font-weight: 700;
+
+    border-top: 1px solid #3B4894;
+    border-right: 1px solid #3B4894;
+    border-left: 1px solid #3B4894;
+    border-bottom: none;
+}
+
+.myPointContain .list-box .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    border-bottom: 1px solid #DDD;
+}
+
+.myPointContain .list-box .list-item .title-box .title {
+    font-size: 16px;
+}
+
+.myPointContain .list-box .list-item .title-box .title.bold {
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.myPointContain .list-box .list-item .title-box .title.error {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #F00
+}
+
+.myPointContain .list-box .list-item .value-box {
+    display: flex;
+    align-items: center;
+}
+
+.myPointContain .list-box .list-item .value-box .value {
+    font-weight: 700;
+}
+
+.myPointContain .list-box .list-item .value-box .value.red {
+    color: #F00
+}
+
+.myPointContain .list-box .list-item .value-box .state {
+    width: 80px;
+    text-align: right;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #999;
+    content: "정산 완료";
+}
+
+.myPointContain .list-box .list-item .value-box .state.blue {
+    color: #3B4894;
+    content: "정산 요청중";
+}
+
+.myPointContain .list-box .list-item .value-box .state.red {
+    color: #F00;
+    content: "정산 실패";
+}
+
+.myPointContain .none-list {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+}
+
+@media (max-width:800px) {
+    .myPointContain {
+        width: 100%;
+        margin: 0;
+    }
+
+    .myPointContain .infoBox {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .myPointContain .infoBox .point-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .myPointContain .infoBox .point-box .info {
+        justify-content: center;
+    }
+
+    .myPointContain .tab-menu-box .tab-menu {
+        font-size: 16px;
+        height: 48px;
+    }
+}

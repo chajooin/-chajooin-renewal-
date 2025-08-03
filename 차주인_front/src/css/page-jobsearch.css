@@ -1,0 +1,215 @@
+.jobSearchContain {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    min-height: 500px;
+}
+
+.jobSearchContain .categoryBox {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+
+.jobSearchContain .categoryBox .categoryBtn {
+    padding: 12px 20px;
+    background-color: #EEE;
+    border-radius: 100px;
+    color: #666;
+    cursor: pointer;
+}
+
+.jobSearchContain .categoryBox .select {
+    background-color: #3B4894;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.jobSearchContain .subCategoryBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.jobSearchContain .subCategoryBox .selBox {
+    display: flex;
+    width: 180px;
+}
+
+.jobSearchContain .subCategoryBox .sellbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    flex-shrink: 0;
+    gap: 4px;
+
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 4px;
+    background: #3B4894;
+}
+
+.jobSearchContain .subCategoryBox .sellbtn img {
+    width: 24px;
+    height: 24px;
+}
+
+.jobSearchContain .search-list-box {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+/* .jobSearchContain .search-list-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+} */
+
+.jobSearchContain .search-list-box .card {
+    position: relative;
+    display: flex;
+    width: calc(50% - 10px);
+    flex-direction: column;
+    padding: 32px;
+
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FFF;
+
+    cursor: pointer;
+}
+
+.jobSearchContain .search-list-box .card.disable {
+    background: #F1F1F1;
+}
+
+.jobSearchContain .search-list-box .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.jobSearchContain .search-list-box .sub-title {
+    margin-top: 8px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.jobSearchContain .search-list-box .line {
+    margin: 20px 0px;
+    border-top: 1px solid #EEE;
+}
+
+.jobSearchContain .search-list-box .info {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.jobSearchContain .search-list-box .info .info-box {
+    display: flex;
+}
+
+.jobSearchContain .search-list-box .info .info-box .label {
+    width: 60px;
+    flex-shrink: 0;
+    color: #666;
+}
+
+.jobSearchContain .search-list-box .info .info-box .text {
+    width: 100%;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.jobSearchContain .search-list-box .state {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 32px;
+    right: 32px;
+    padding: 5px 10px;
+
+    color: #999;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: #DDD;
+}
+
+.jobSearchContain .search-list-box .state.disable {
+    display: flex;
+    color: #999;
+
+    border: 1px solid #EEE;
+    /* background: #F1F1F1; */
+}
+
+@media (max-width: 800px) {
+
+    .jobSearchContain .subCategoryBox .selBox {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .jobSearchContain .subCategoryBox .sellbtn {
+        width: 120px;
+    }
+
+    .jobSearchContain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .jobSearchContain .search-list-box {
+        flex-direction: column;
+    }
+
+    .jobSearchContain .search-list-box .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .jobSearchContain .search-list-box .title {
+        font-size: 20px;
+    }
+
+    .jobSearchContain .search-list-box .sub-title {
+        font-size: 14px;
+    }
+
+    .jobSearchContain .search-list-box .line {
+        margin: 12px 0px;
+    }
+
+    .jobSearchContain .search-list-box .info {
+        gap: 4px;
+    }
+
+    .jobSearchContain .search-list-box .info .info-box .label {
+        font-size: 14px;
+    }
+
+    .jobSearchContain .search-list-box .info .info-box .text {
+        font-size: 14px;
+    }
+
+    .jobSearchContain .search-list-box .state {
+        top: 20px;
+        right: 20px;
+    }
+}

@@ -1,0 +1,210 @@
+.jobOfferContain {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    min-height: 500px;
+}
+
+.jobOfferContain .categoryBox {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+
+.jobOfferContain .categoryBox .categoryBtn {
+    padding: 12px 20px;
+    background-color: #EEE;
+    border-radius: 100px;
+    color: #666;
+    cursor: pointer;
+}
+
+.jobOfferContain .categoryBox .select {
+    background-color: #3B4894;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.jobOfferContain .subCategoryBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.jobOfferContain .subCategoryBox .selBox {
+    display: flex;
+    width: 180px;
+}
+
+.jobOfferContain .subCategoryBox .sellbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    flex-shrink: 0;
+    gap: 4px;
+
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 4px;
+    background: #3B4894;
+}
+
+.jobOfferContain .subCategoryBox .sellbtn img {
+    width: 24px;
+    height: 24px;
+}
+
+.jobOfferContain .offer-list-box {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+/* .jobOfferContain .offer-list-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+} */
+
+.jobOfferContain .offer-list-box .card {
+    display: flex;
+    width: calc(50% - 10px);
+    /* width: 100%; */
+    flex-direction: column;
+    padding: 32px;
+
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FFF;
+
+    cursor: pointer;
+}
+
+.jobOfferContain .offer-list-box .card.disable {
+    background: #F1F1F1;
+}
+
+.jobOfferContain .offer-list-box .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.jobOfferContain .offer-list-box .sub-title {
+    margin-top: 8px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.jobOfferContain .offer-list-box .line {
+    margin: 20px 0px;
+    border-top: 1px solid #EEE;
+}
+
+.jobOfferContain .offer-list-box .info {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.jobOfferContain .offer-list-box .info .info-box {
+    display: flex;
+}
+
+.jobOfferContain .offer-list-box .info .info-box .label {
+    width: 60px;
+    flex-shrink: 0;
+    color: #666;
+}
+
+.jobOfferContain .offer-list-box .info .info-box .text {
+    width: 100%;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.jobOfferContain .offer-list-box .state {
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    color: #3B4894;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 1px solid #3B4894;
+    background: #FFF;
+}
+
+.jobOfferContain .offer-list-box .state.disable {
+
+    color: #999;
+
+    border: none;
+    background: #DDD;
+}
+
+@media (max-width: 800px) {
+
+    .jobOfferContain .subCategoryBox .selBox {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .jobOfferContain .subCategoryBox .sellbtn {
+        width: 120px;
+    }
+
+    .jobOfferContain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .jobOfferContain .offer-list-box {
+        flex-direction: column;
+    }
+
+
+    .jobOfferContain .offer-list-box .card {
+        width: 100%;
+    }
+
+    .jobOfferContain .offer-list-box .title {
+        font-size: 20px;
+    }
+
+    .jobOfferContain .offer-list-box .sub-title {
+        font-size: 14px;
+    }
+
+    .jobOfferContain .offer-list-box .line {
+        margin: 12px 0px;
+    }
+
+    .jobOfferContain .offer-list-box .info {
+        gap: 4px;
+    }
+
+    .jobOfferContain .offer-list-box .info .info-box .label {
+        font-size: 14px;
+    }
+
+    .jobOfferContain .offer-list-box .info .info-box .text {
+        font-size: 14px;
+    }
+}

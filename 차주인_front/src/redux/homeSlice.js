@@ -1,0 +1,21 @@
+import { createSlice } from '@reduxjs/toolkit';
+import { useSelector } from 'react-redux';
+
+const home = createSlice({
+    name: 'homeinfo',
+    initialState: {
+        homeInfo: {}
+    },
+
+    reducers: {
+        setHomeInfo(state, action) {
+            state.homeInfo = action.payload.homeInfo
+        },
+    },
+});
+
+export const {
+    setHomeInfo,
+} = home.actions;
+
+export default home.reducer;

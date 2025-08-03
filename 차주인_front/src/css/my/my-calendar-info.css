@@ -1,0 +1,130 @@
+.myCalendarInfoContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* margin: 20px 0px; */
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.myCalendarInfoContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+    background-color: #FFF;
+}
+
+.myCalendarInfoContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+.myCalendarInfoContain .infoBox .line {
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+}
+
+.myCalendarInfoContain .infoBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.myCalendarInfoContain .contents {
+    width: 100%;
+}
+
+.myCalendarInfoContain .contents .name-text {
+    font-size: 16px;
+}
+
+.myCalendarInfoContain .contents .title {
+    margin-top: 12px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.myCalendarInfoContain .contents .sub-info {
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+.myCalendarInfoContain .contents .row-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.myCalendarInfoContain .contents .row-box .row {
+    display: flex;
+    min-height: 56px;
+    border-bottom: 1px solid #DDD;
+}
+
+.myCalendarInfoContain .contents .row-box .row:nth-child(1) {
+    border-top: 1px solid #DDD;
+}
+
+.myCalendarInfoContain .contents .row-box .row .r-name {
+    display: flex;
+    width: 120px;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0px 12px;
+
+    color: #666;
+    font-size: 16px;
+    background-color: #F1F1F1;
+}
+
+.myCalendarInfoContain .contents .row-box .row .r-name.ttop {
+    padding-top: 12px;
+    align-items: start;
+}
+
+.myCalendarInfoContain .contents .row-box .row .r-value {
+    display: flex;
+    align-items: center;
+    padding: 12px 0px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+
+
+.myCalendarInfoContain .contents .btn-box {
+    margin-top: 40px;
+    display: flex;
+    gap: 8px;
+}
+
+
+@media (max-width: 800px) {
+    .myCalendarInfoContain {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .myCalendarInfoContain .infoBox {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .myCalendarInfoContain .contents .title {
+        font-size: 24px;
+    }
+
+    .myCalendarInfoContain .contents .sub-info {
+        font-size: 14px;
+    }
+
+    .myCalendarInfoContain .contents .row-box .row .r-name {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .myCalendarInfoContain .contents .row-box .row .r-value {
+        font-size: 14px;
+    }
+}

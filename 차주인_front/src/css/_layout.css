@@ -1,0 +1,888 @@
+.normalform {
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    padding: 32px; background-color: #fff; border-radius: 8px;
+    border: 1px solid #CCC; width: 500px;
+}
+.normalformw1000 {
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    width: 1000px;
+}
+.normalformw1000.backwhite {
+    background-color: #fff;
+}
+.normalformw1000.heightgap40 { gap: 40px; }
+.normalformw1000_title {
+    color: #333; font-size: 32px; font-weight: 700;
+}
+.normalform > div {
+    width: 100%;
+}
+.normalform_title {
+    color: #333; font-size: 24px; font-weight: 700; text-align: center; margin-bottom: 40px;
+}
+.normalform_comment {
+    color: #333; font-size: 14px; font-weight: 400; 
+}
+.normalform_comment2 {
+    color: #333; font-size: 16px; font-weight: 700;
+}
+.inputArea {
+    margin-top: 12px;
+}
+
+.loginbutton {
+    margin-top: 12px;
+}
+.findidpwarea {
+    margin-top: 12px; display: flex; align-items: center; justify-content: center;
+    gap: 12px;
+}
+.findbutton {
+    color: #333; font-size: 12px; font-weight: 400;
+}
+.findidpwarea > span {
+    display: flex; width: 1px; height: 12px; background-color: #ccc;
+}
+.registerbuttonArea > p {
+    text-align: center; margin-top: 40px; margin-bottom: 12px;
+}
+
+.findidresultArea {
+    border-top: 1px solid #333; margin-top: 40px;
+}
+.findidresultArea > div {
+    display: flex; align-items: center; justify-content: flex-start; height: 33px; border-bottom: 1px solid #333;
+}
+.findidresultArea > div > p {
+    color: #333; font-size: 14px; font-weight: 400;
+}
+.findidresultArea > div > p:nth-child(1) {
+    width: 112px; text-align: center;
+}
+.findidresultArea > div:nth-child(2) {
+    border-bottom: 1px solid #DDD;
+}
+.findidresultnoArea {
+    display: flex; align-items: center; justify-content: center;
+    height: 100px;
+}
+
+.register_checkall {
+    margin-top: 20px; border-bottom: 1px solid #EEE; padding-bottom: 12px;
+}
+.register_checkall > button {
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: row; gap: 8px;
+}
+.register_checkall > button > div:nth-child(2) {
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column;
+    text-align: left; gap: 4px;
+}
+.register_checkall > button > div:nth-child(2) > p:nth-child(1) {
+    font-size: 16px; font-weight: 700; color: #333;
+}
+.register_checkall > button > div:nth-child(2) > p:nth-child(2) {
+    font-size: 12px; color: #666; 
+}
+
+.register_checks {
+    margin-top: 20px; display: flex; align-items: center; justify-content: space-between;
+}
+.register_checks > button:nth-child(1) {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    font-size: 14px;
+}
+.register_checks > button:nth-child(2) {
+    border: 1px solid #CCC; width: 45px; height: 22px;
+    border-radius: 100px; font-size: 12px; color: #333;
+}
+
+.write_image_list {
+    display: flex; align-items: center; justify-content: flex-start; gap: 8px; margin-top: 8px;
+}
+.write_image_list > button,
+.write_image_list > div {
+    display: flex; align-items: center; justify-content: center; 
+    position: relative; width: 112px; height: 112px;
+    background-repeat: no-repeat; background-size: cover; border-radius: 4px;
+    overflow: hidden; background-position: center;
+}
+.write_image_list > div > button {
+    background-color: rgba(0,0,0,0);
+    position: absolute; right: 0; top: 0;
+}
+.write_image_list > button {
+    flex-direction: column; background-color: #F5F5F5;
+}
+.write_image_list > button > p {
+    color: #6164A5; font-size: 14px; font-weight: 700;
+}
+
+.pageinfoNumbering {
+    width: 116px; height: 53px; gap: 5px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 100px; border: 1px solid #DDD;
+    background: #FFF;    
+    color: #999; font-size: 24px;
+}
+.pageinfoNumbering > b { color: #333; font-size: 24px; }
+
+.storeSelectors {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    width: 100%;
+}
+.storeSelectors > div {
+    width: 50%; background-color: #fff; min-height: 400px; padding: 40px; border-radius: 20px; cursor: pointer;
+    display: flex; align-items: center; flex-direction: column; justify-content: space-between;
+}
+.storeSelectors > div > div:nth-child(1) {
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 8px;
+    width: 100%; font-size: 16px; font-weight: 400; color: #333;
+}
+.storeSelectors > div > div:nth-child(1) > p:nth-child(2) {
+    font-size: 36px; font-weight: 800;
+}
+.storeSelectors > div > div:nth-child(2) {
+    width: 100%; text-align: right;
+}
+.buttonWithTxt {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 20px;
+}
+.buttonWithTxt > div:nth-child(1) {
+    width: 120px;
+}
+.buttonWithTxt > div:nth-child(2) {
+    width: calc(100% - 128px);
+}
+
+.radiopop1 {
+    background-color: #fff; padding: 32px; border-radius: 8px; width: 400px; color: #333; font-size: 14px;
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column; gap: 20px;
+}
+.radiopop1 > div:nth-child(1) {
+    font-size: 24px; font-weight: 700;
+}
+.radiopop1 > div:nth-child(2) > p:nth-child(1) {
+    font-size: 16px; font-weight: 700; margin-bottom: 8px;
+}
+
+.radiopop1 > div:nth-child(4) {
+    font-size: 12px; 
+}
+
+
+.radiowp100 {
+    background-color: #fff; border-radius: 8px; width: 100%; color: #333; font-size: 14px;
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column; gap: 20px;
+}
+
+.radiowp100 > div:nth-child(1) {
+    font-size: 16px; font-weight: 700; margin-bottom: 8px;
+}
+.radiowp100 > div:nth-child(2) > div {
+    align-items: flex-start !important; 
+}
+.radiowp100 > div:nth-child(3) {
+    font-size: 12px; 
+}
+
+.normaltableview {
+    border-top: 1px solid #DDD;
+}
+.normaltableview > div {
+    border-bottom: 1px solid #DDD; display: flex; align-items: flex-start; justify-content: flex-start;
+}
+.normaltableview > div > div {
+    padding: 8px; font-size: 16px; color: #333;
+}
+.normaltableview > div > div:nth-child(1) {
+    width: 130px; background-color: #F1F1F1;
+}
+.substoreAgree {
+    padding: 20px; border-radius: 4px; background: #F1F1F1; color: #333;
+    display: flex; flex-direction: column; gap: 8px; font-size: 14px; margin-top: 8px;
+}
+.substoreAgree > div:nth-child(1) {
+    font-weight: 700;
+}
+
+.profileArea1 {
+    width: 100%; display: flex; align-items: center; flex-direction: row; gap: 20px;
+}
+.profileArea1 > .profileimg {
+    width: 48px; height: 48px; background-size: cover; background-repeat: no-repeat;
+    background-position: center; border-radius: 50%;
+}
+.profileArea1 > .profilenames {
+    color: #333; font-size: 32px; font-weight: 700;
+}
+
+
+.bgareastyle1 > .areatitles {
+    display: flex; align-items: center; justify-content: flex-start; gap: 8px;
+    font-size: 14px;
+}
+.bgareastyle1 > .areatitles > span.titleTxt {
+    font-size: 24px; font-weight: 700;
+}
+.bgareastyle1 > .areatitles > span.titleTxt2 {
+    font-size: 20px; font-weight: 700;
+}
+.areatitles2 {
+    display: flex; align-items: center; justify-content: flex-start; gap: 8px;
+    font-size: 14px;
+}
+.areatitles2 > span.titleTxt {
+    font-size: 20px; font-weight: 700;
+}
+
+.areacontents1 {
+    width: 100%; display: flex; align-items: flex-start; justify-content: center; flex-direction: row;
+    margin-top: 12px;
+}
+.areacontents1 > div.tables {
+    width: 140px;
+}
+.areacontents1 > div.tables.tabletype1,
+.areacontents1 > div.tables.tabletype2,
+.areacontents1 > div.tables.tabletype3 {
+    width: 33.33333333%;
+}
+.areacontents1 > div.tables > div {
+    min-height: 40px; font-size: 14px;
+    display: flex; align-items: center; justify-content: center; flex-direction: row;
+    border-right: 1px solid #DDD;  border-top: 1px solid #DDD; 
+}
+.areacontents1 > div.tables > div:last-child {
+    border-bottom: 1px solid #DDD;
+}
+.areacontents1 > div.tables.th > div:first-child {
+    border-top: 0px solid #DDD; 
+}
+.areacontents1 > div.tables.th > div {
+    border-right: 1px solid #6164A5;
+}
+.areacontents1 > div.tables.th > div {
+    justify-content: flex-start; align-items: flex-start; padding-left: 20px;
+    padding-top: 12px;
+}
+.areacontents1 > div.tables.th > div > span {
+    display: inline-block; width: 3px; height: 3px; background-color: #333; border-radius: 50%; margin: 6px 6px 0;
+}
+
+.areacontents1 > div.tables > div.lasts {
+    min-height: 162px;
+}
+.areacontents1 > div.tables > div.titletxt {
+    font-size: 16px; font-weight: 700; background-color: #F1F1F1;
+}
+.areacontents1 > div.tables > div.titletxt > span {
+    font-size: 14px; font-weight: 400; margin-left: 5px;
+}
+.areacontents1 > div.tables > div.area1 > div {
+    width: 50%; display: flex; align-items: center; justify-content: center;
+}
+.areacontents1 > div.tables > div.area1 > div > span.bolds { font-size: 20px; margin-left: 8px; }
+
+.areacontents1 > div.tables > div.area4 {
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+}
+.areacontents1 > div.tables > div.area4 > div {
+    display: flex; align-items: center; justify-content: center; flex-direction: row; min-height: 40px;
+    width: 100%;
+}
+.areacontents1 > div.tables > div.area4 > div > div {
+    width: 50%; display: flex; align-items: center; justify-content: center;
+}
+.areacontents1 > div.tables > div.area3 > span.bolds {
+    font-size: 20px;
+}
+
+.areacontents1 > div.tables.tabletype1 > div.titletxt {
+    font-size: 16px; font-weight: 700; background-color: #6164A5; color: #fff;
+    border-top: 1px solid #6164A5; 
+}
+.areacontents1 > div.tables.tabletype1 > div {
+    border-right: 1px solid #6164A5;  
+}
+.areacontents1 > div.tables.tabletype1 > div:last-child {
+    border-bottom: 1px solid #DDD;
+}
+
+
+.areacontents1 > div.tables.tabletype2 > div.titletxt {
+    font-size: 16px; font-weight: 700; background-color: #E1E2FC;  
+}
+
+.stickerarea01 {
+    display: flex; align-items: center; justify-content: center; gap: 20px
+}
+.stickerarea01 > div {
+    width: 33.333333333%;
+}
+.stickerlist01 {
+    display: flex; align-items: center; justify-content: space-between; flex-direction: column;
+}
+.stickerlist01 > div {
+    width: 100%; min-height: 30px; display: flex; align-items: center; justify-content: space-between; 
+}
+
+.stickerlist01 > div > span {
+    display: flex; align-items: center; justify-content: flex-start; flex-direction: row;
+}
+.stickerlist01 > div > span:first-child {
+    width: calc(100% - 100px); 
+}
+.stickerlist01 > div > span:last-child {
+    width: 100px; display: flex; align-items: center; justify-content: flex-end; 
+}
+.stickericons {
+    display: flex; align-items: center; justify-content: center; font-size: 12px; margin-right: 12px; font-weight: 700;
+    color: #fff; height: 22px; min-width: 37px; background-color: #748297;
+}
+.stickericons.style1 {
+    display: flex; align-items: center; justify-content: center; font-size: 12px; margin-right: 12px; font-weight: 700;
+    color: #333; height: 22px; min-width: 37px; background-color: #fff; border: 1px solid #333;
+}
+.stickericons2 {
+    display: flex; align-items: center; justify-content: center; font-size: 12px;
+    height: 22px; min-width: 100%; background-color: #F1F1F1;
+}
+.tables01 {
+    display: flex; align-items: center; justify-content: center; flex-direction: row; width: 100%;
+}
+.tables01 > div {
+    width: 25%; border-right: 1px solid #DDD;
+}
+.tables01 > div:last-child {
+    border-right: 0px;
+}
+.tables01 > div > div {
+    display: flex; align-items: center; justify-content: center; min-height: 40px;
+    border-bottom: 1px solid #DDD;
+}
+.tables01 > div > div.titletxt {
+    font-weight: 700; border-top: 1px solid #333; background-color: #FAFAFA;
+}
+.tables01 > div > div.contents {
+    justify-content: space-between; padding: 0px 20px;
+}
+.tables01 > div > div.contents > div:nth-child(1) {
+    width: 40px; font-weight: 700;
+}
+.tables01 > div > div.contents > div:nth-child(2) {
+    width: 56px;
+}
+
+.tables01 > div > div.contents > div:nth-child(3) {
+    width: calc(100% - 104px); margin-left: 8px;
+}
+
+.productsearch {
+    background-color: #F2F4F7; border-radius: 12px;
+    display: flex; align-items: center; justify-content: flex-start; gap: 40px;
+}
+.productsearch > .searchselect {
+    display: flex; align-items: center; justify-content: center; gap: 4px;
+}
+.listselecter {
+    display: flex; align-items: center; justify-content: space-between; flex-direction: row; 
+    margin-top: 40px;
+}
+.listselecter > div:nth-child(1), 
+.listselecter > div:nth-child(2) {
+    display: flex; align-items: center; justify-content: flex-start; flex-direction: row; gap: 8px;
+    width: 489px;
+}
+.listselecter > div:nth-child(2) {
+    width: calc(100% - 529px);
+}
+.listselecter > div:nth-child(1) > div:nth-child(1),
+.listselecter > div:nth-child(1) > div:nth-child(2) {
+    width: 130px;
+}
+
+.listselecter > div:nth-child(2) > div:nth-child(1){
+    width: 100%;
+}
+
+.listselecterviewer {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 12px; border-radius: 4px; border: 1px solid var(--Dark, #333);
+    background: var(--White, #FFF); margin-top: 8px;
+}
+div.selstickdelarea {
+    width: calc(100% - 70px); display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap; gap: 8px;
+}
+div.selstickdelarea > button {
+    display: flex; align-items: center; justify-content: center; gap: 4px; background-color: #F2F4F7; padding: 4px;
+}
+.listselecterviewer > div:nth-child(2) {
+    width: 70px; display: flex; align-items: center; justify-content: space-between;
+}
+.listselecterviewer > div:nth-child(2) > div:nth-child(1) {
+    width: 1px; height: 20px; background-color: #999999;
+}
+.selectlistclear {
+    display: flex; align-items: center; justify-content: center; gap: 4px;;
+}
+
+.productlistArea {
+    margin-top: 20px; 
+}
+.productlist_th {
+    display: flex; align-items: center; justify-content: space-between; gap: 4px; background-color: #F2F4F7;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+}
+.productlist_th > div {
+    min-height: 36px; display: flex; align-items: center; justify-content: center; 
+}
+.product_scroll_list {
+    height: calc(100% - 38px); overflow-y: auto; overflow-x: hidden;
+}
+
+.product_scroll_list::-webkit-scrollbar {
+    width: 5px;
+}
+.product_scroll_list::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+}
+.product_scroll_list::-webkit-scrollbar-track {
+    background-color: rgba(221, 221, 221, 1);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+
+.productlist_td {
+    display: flex; align-items: center; justify-content: space-between; gap: 4px; background-color: #fff;
+    border-bottom: 1px solid #F2F4F7;
+    width: 100%;
+}
+.productlist_td:hover {
+    background-color: #F2F4F7; 
+}
+.productlist_td:hover > div > div {
+    font-weight: 700;
+}
+.productlist_td > div {
+    min-height: 48px; display: flex; align-items: center; justify-content: center; 
+}
+
+.setstyles {
+    min-width: 72px; height: 32px; border: 1px solid #fff; border-left: 6px solid #fff; background-color: #fff;
+    display: flex; align-items: center; justify-content: flex-start; padding-left: 6px;
+}
+.setstyles.black { border: 1px solid #333; border-left: 6px solid #333; }
+.setstyles.green { border: 1px solid #33D330; border-left: 6px solid #33D330; }
+.setstyles.blue { border: 1px solid #5C96ED; border-left: 6px solid #5C96ED; }
+.setstyles.red { border: 1px solid #F00; border-left: 6px solid #F00; }
+.setstyles.orange { border: 1px solid #FF820F; border-left: 6px solid #FF820F; }
+.setstyles.gray { border: 1px solid #CCC; border-left: 6px solid #CCC; }
+
+
+.filterpoparea {
+    position: absolute; right: 0; top: 39px; z-index: 2; overflow-x: hidden; overflow-y: auto;
+    min-width: 800px; height: 634px; background-color: #fff;
+    border-radius: 4px; border: 1px solid #333;
+}
+.filterlines {
+    height: 1px; margin: 20px 0px;
+    background-color: #EEEEEE; 
+}
+.filterselect { width: 400px; }
+.filterSelarealists {
+    display: flex; align-items: flex-start; justify-content: space-between;
+}
+
+.filterSelarealists > div .titleTxt {
+    font-size: 16px;font-weight: 700;
+}
+.filterSelarealists1 {
+    width: 22%;
+}
+.filterSelarealists3 {
+    width: 43%;
+}
+.filterSelarealists1 > div:nth-child(2) {
+    margin-top: 12px; margin-bottom: 12px; 
+}
+.filterSelarealists2 {
+    width: 35%;
+    margin: 0px 20px; padding: 0px 20px; border-left: 1px solid #EEEEEE; border-right: 1px solid #EEEEEE;
+}
+.filterSelarealists2 > div:nth-child(2) { margin-top: 13.5px; }
+.filterSelarealists2 > div:nth-child(3) { margin-top: 13.5px; }
+
+.filterSelarealists3 > div > div:nth-child(2) {
+    display: flex; align-items: center; justify-content: center; margin-top: 8px; gap: 4px;
+}
+.filteraddrarea > div:nth-child(1) {
+    font-size: 16px;font-weight: 700;
+}
+.filteraddrarea > div.addrlists {
+    border: 1px solid #ccc; 
+}
+.filteraddrarea > div.addrlists > div {
+    display: flex; align-items: center; justify-content: center; 
+}
+.filteraddrarea > div.addrlists > div:nth-child(1) {
+    height: 33px; border-bottom: 1px solid #ccc; text-align: center;
+}
+.filteraddrarea > div.addrlists > div:nth-child(2) > div {
+    overflow-y: auto; overflow-x: hidden; height: 200px; 
+}
+.filteraddrarea > div.addrlists > div:nth-child(2) > div::-webkit-scrollbar {
+    width: 5px;
+}
+.filteraddrarea > div.addrlists > div:nth-child(2) > div::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+}
+.filteraddrarea > div.addrlists > div:nth-child(2) > div::-webkit-scrollbar-track {
+    background-color: rgba(221, 221, 221, 1);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+.filteraddrarea > div.addrlists > div > div:nth-child(1),
+.filteraddrarea > div.addrlists > div > div:nth-child(2) {
+    width: 108px;
+}
+.filteraddrarea > div.addrlists > div:nth-child(2) > div:nth-child(2) {
+    border-left: 1px solid #CCC; border-right: 1px solid #CCC;
+}
+.filteraddrarea > div.addrlists > div > div:nth-child(3) {
+    width: calc(100% - 216px); display: flex; align-content: baseline; flex-wrap: wrap; flex-direction: row;
+}
+.filteraddrarea > div.addrlists > div > div:nth-child(3) > div { height: 33px;} 
+.addrlistsbutton {
+    width: 108px; height: 33px; display: flex; align-items: center; justify-content: flex-start; padding-left: 8px;
+    gap: 4px;
+}
+.addrlistsbutton.active {
+    background-color: #E1E2FC;
+}
+.filterbuttonsarea {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.filterbuttonsarea > div {
+    width: 200px;
+}
+.filterbuttonsarea > div:nth-child(1) {
+    width: calc(100% - 200px);
+}
+
+.polyareas {
+    position: absolute; left: 0; top: 0; width: 100%; z-index: 1000; height: 83px;
+    display: flex; align-items: center; justify-content: center;
+}
+.polyareas.darkbg {
+    background-color: rgba(0,0,0,0.5);
+}
+.polyaddbutton {
+    width: 145px; height: 43px;background-color: #333; border-radius: 30px;
+    color: #FBB604; border: 3px solid #FBB604; font-size: 16px; font-weight: 700;
+}
+.polycancleviewer {
+    color: #fff; font-size: 16px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+}
+.polycanclebutton {
+    width: 68px; height: 43px;background-color: #333; border-radius: 30px;
+    color: #fff; font-size: 16px; font-weight: 700;
+}
+
+.listsetpopArea {
+    position: fixed; right: 0px; top: 0px; width: 600px; height: 100%; background-color: #fff;
+    z-index: 1001; padding: 20px; border: 1px solid #333; overflow: auto;
+}
+
+.popcloseTitle {
+    display: flex; align-items: center; justify-content: space-between;
+}
+.popcloseTitle > span {
+    font-size: 24px; font-weight: 700;
+}
+.listsetarea1 {
+    display: flex; align-items: center; justify-content: center;
+}
+.listsetarea2 {
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+}
+.listsetarea2 > div > div:nth-child(1) {
+    font-size: 16px; font-weight: 700; text-align: center;
+}
+.listsetarea2 > div > div:nth-child(2) {
+    border: 1px solid #CCC; border-bottom: 0px; 
+}
+.listsetarea2 > div > div:nth-child(2) > button {
+    border-bottom: 1px solid #ccc; width: 120px; height: 20px; font-size: 10px;
+}
+.listsetarea2 > div > div:nth-child(2) > button.active {
+    background-color: #E1E2FC;
+}
+.listsetarea3 {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+}
+.listsetarea3 > div:nth-child(1) { font-weight: 700; }
+.listsetarea3 { font-weight: 700; font-size: 16px; }
+.listsetarea4 { font-size: 12px; text-align: center; }
+
+.productsendArea {
+    width: 100%; display: flex; align-items: flex-start; justify-content: space-between;
+    flex-direction: column; gap: 12px;
+}
+.productsendArea > div:nth-child(1) {
+    font-size: 16px; font-weight: 700;
+}
+.productsendArea > div:nth-child(2) {
+    font-size: 20px; font-weight: 700;
+}
+.productsendArea > div:nth-child(4) {
+    display: flex; align-items: center; justify-content: flex-start; padding-bottom: 12px;
+    border-bottom: 1px solid #EEE; width: 100%;
+}
+.productsendArea > div:nth-child(5) > div:nth-child(1) {
+    font-weight: 700;
+}
+
+.schedulearea {
+    width: 1250px; margin: auto;
+    display: flex; align-items: flex-start; justify-content: space-between;
+}
+.schedulearea > div {
+    background-color: #fff; border-radius: 20px;
+    border: 1px solid #EEE;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);    
+}
+.schedulearea > div:nth-child(1) {
+    width: 900px; 
+}
+.schedulearea > div:nth-child(2) {
+    width: 330px; background-color: #fff; padding: 20px;
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column;
+    gap: 40px; 
+}
+.schedulearea > div:nth-child(2) > div:nth-child(1) {
+    width: 100%; display: flex; align-items: flex-end; justify-content: flex-end;
+}
+.schedulearea > div:nth-child(2) > div.scheduleListarea {
+    width: 100%; display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column; gap: 12px;
+}
+.schedulearea > div:nth-child(2) > div.scheduleListarea > div {
+    width: 100%;
+}
+.schedulearea > div:nth-child(2) > div.scheduleListarea > div:nth-child(1) {
+    display: flex; align-items: center; justify-content: flex-start;
+}
+.schedulearea > div:nth-child(2) > div.scheduleListarea > div > div:nth-child(1) {
+    display: flex; align-items: center; justify-content: flex-start; gap: 5px; 
+}
+.schedulearea > div:nth-child(2) > div.scheduleListarea > div > div.vacations {
+    display: flex; align-items: center; justify-content: space-between; padding: 12px;
+    background-color: #F1F1F1; border-radius: 4px; margin-bottom: 12px;
+}
+.schedulearea > div:nth-child(2) > div.scheduleListarea > div > div.normals {
+    display: flex; align-items: flex-start; justify-content: space-between; padding: 8px 0px;
+    border-bottom: 1px solid #DDD; gap: 8px;
+}
+.schedulearea > div:nth-child(2) > div.scheduleListarea > div > div.normals > div:nth-child(1) { width: 92px; }
+.schedulearea > div:nth-child(2) > div.scheduleListarea > div > div.normals > div:nth-child(2) {
+    width: calc(100% - 100px); display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column; gap: 4px;
+}
+.profileImages {
+    display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+}
+.profileImages > div {
+    width: 72px; height: 72px; border: 1px solid #EEE; border-radius: 50%; 
+    position: relative; background-color: #fff; display: flex; align-items: center; justify-content: center;
+    background-repeat: no-repeat; background-position: center;
+}
+.profileImages > div > button {
+    position: absolute; right: -15px; bottom: 0; z-index: 1;
+}
+
+.mypagelinks {
+    padding: 20px; border-bottom: 1px solid #EEE; width: 100%;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.mypagelinks > div {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+} 
+.mypagearea {
+    width: 1200px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;
+}
+.mypagearea > div:nth-child(1) {
+    width: 360px;
+}
+.mypagearea > div:nth-child(2) {
+    width: calc(100% - 380px); 
+}
+.mypagearea > div {
+    background-color: #fff; border-radius: 20px;
+    border: 1px solid #EEE;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);    
+}
+.pagetabs {
+    display: flex; align-items: center; justify-content: flex-start; gap: 1px;
+    border-bottom: 1px solid #EEE;
+}
+.pagetabs > button {
+    border-radius: 8px 8px 0px 0px; width: 120px; height: 40px;
+    background-color: #EEE; font-size: 16px; color: #999;
+}
+.pagetabs > button.active {
+    background-color: #6164A5; color: #fff; font-weight: 700;
+}
+
+
+.pagetabs_white {
+    display: flex; align-items: center; justify-content: flex-start; gap: 1px;
+}
+.pagetabs_white > button {
+    border-radius: 8px 8px 0px 0px; width: 120px; height: 40px;
+    background-color: #fff; font-size: 16px; color: #999;
+}
+.pagetabs_white > button.active {
+    background-color: #6164A5; color: #fff; font-weight: 700;
+}
+.mypageinputsarea {
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column;
+    gap: 20px;
+}
+.mypageinputsarea > div {
+    text-align: center; width: 100%;
+}
+.backbuttonarea {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-bottom: 12px; border-bottom: 1px solid #DDD; margin-bottom: 20px;
+}
+.backbuttonarea > div {
+    display: flex; align-items: center; justify-content: center; gap: 5px;
+}
+.backbuttonarea > button {
+    color: #666;
+}
+
+.termContetns {
+    height: 500px; overflow-y: auto; overflow-x: hidden; width: 100%;
+}
+
+.customercenter {
+    width: 900px; margin: auto; 
+}
+.customercenter > .customercenterPage {
+    background-color: #fff; padding: 32px; 
+    display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;
+    border-radius: 0px 20px 20px 20px; border: 1px solid #EEE;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);    
+}
+.customercenter > .customercenterPage.allround {
+    border-radius: 20px 20px 20px 20px; 
+}
+.customercenter > .customercenterPage > div {
+    width: 100%;
+}
+.noticedefault {
+    background-color: #6164A5; padding: 4px 8px; border-radius: 4px; font-weight: 700; color: #fff;
+    margin-right: 8px;
+}
+.faqlistArea {
+    border-top: 1px solid #eee;
+}
+.faqlistView {
+    padding: 20px; border-bottom: 1px solid #eee;;
+}
+.faqlistView.active {
+    background-color: #F2F4F7;
+}
+.faqlistView > div:nth-child(1) {
+    font-weight: 700; display: flex; align-items: center; justify-content: space-between;
+}
+.faqlistView > div:nth-child(2) {
+    margin-top: 20px;
+}
+
+.membercontrolarea {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+}
+.membercontrolarea > div:nth-child(1) {
+    width: calc(100% - 332px);
+}
+.membercontrolarea > div:nth-child(2) {
+    width: 320px;
+}
+
+
+.membercontrolinfoArea {
+    padding: 20px; border: 1px solid #6164A5;
+    display: flex; align-items: flex-start; justify-content: flex-start; flex-direction: column;
+    gap: 20px;
+}
+.membercontrolinfoArea > div {
+    width: 100%;
+}
+.membercontrolheader {
+    display: flex; align-items: center; justify-content: space-between;
+}
+.membercontrolheader > div {
+    font-weight: 700;
+}
+.membercontrolheader > button {
+    text-decoration: underline;
+}
+.membercontrolprofileImages {
+    display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+}
+.membercontrolprofileImages > div {
+    width: 72px; height: 72px; border: 1px solid #EEE; border-radius: 50%; 
+    position: relative; background-color: #fff; display: flex; align-items: center; justify-content: center;
+    background-repeat: no-repeat; background-position: center;
+}
+
+.membercontrolinputtextviewtype1 {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px;
+}
+.membercontrolinputtextviewtype1 > div:nth-child(1) { width: 90px; text-align: left; color: #666; }
+.membercontrolinputtextviewtype1 > div:nth-child(2) { 
+    width: calc(100% - 98px); display: flex; align-items: center; justify-content: flex-start;
+    flex-wrap: wrap; gap: 1px; 
+}
+
+.membercontroldivline {
+    height: 1px; background-color: #EEEEEE;
+}
+.membercontrolboldstitle {
+    font-weight: 700; margin-bottom: 10px;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.membercontrolboldstitle > span {
+    font-weight: 700;
+}
+.membercontrolTrophycountinfo {
+    display: flex; align-items: center; justify-content: center; margin-top: 12px;
+    background: #FFF;
+}
+.membercontrolTrophycountinfo > div {
+    width: 175px; display: flex; align-items: center; justify-content: center; flex-direction: column;
+    text-align: center; color: #666; font-size: 12px; gap: 8px;
+}
+.membercontrolTrophycountinfo > div > div:nth-child(1) { color: #666; font-size: 12px; }
+.membercontrolTrophycountinfo > div > div:nth-child(2) { font-weight: 700; font-size: 20px; }
+.membercontrolTrophycountinfo > div > div.lightblue { color: #6164A5; }
+.membercontrolTrophycountinfo > div:nth-child(2) {
+    border-left: 1px solid #DDD; border-right: 1px solid #DDD;
+}

@@ -1,0 +1,162 @@
+.myInfoContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* margin: 20px 0px; */
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.myInfoContain .input-400 {
+    width: 400px;
+}
+
+.myInfoContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+    background-color: #FFF;
+}
+
+.myInfoContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+.myInfoContain .infoBox .line {
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+}
+
+.myInfoContain .my-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.myInfoContain .my-info-box>.item {
+    display: flex;
+    min-height: 56px;
+    border-bottom: 1px solid #DDD;
+}
+
+.myInfoContain .my-info-box>.item:nth-child(1) {
+    border-top: 1px solid #DDD;
+}
+
+.myInfoContain .my-info-box>.item>.title {
+    display: flex;
+    width: 120px;
+    padding: 12px;
+    align-items: center;
+    flex-shrink: 0;
+
+    color: #666;
+    font-size: 16px;
+    background: #F1F1F1;
+}
+
+.myInfoContain .my-info-box>.item>.title.col {
+    align-items: normal;
+}
+
+.myInfoContain .my-info-box>.item>.value {
+    display: flex;
+    width: calc(100% - 120px);
+    padding-left: 12px;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 16px;
+}
+
+.myInfoContain .my-info-box>.item>.value.col {
+    align-items: normal;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.myInfoContain .my-info-box>.item>.value .pass-change-btn {
+    width: 80px;
+}
+
+.myInfoContain .my-info-box>.item>.value .helper {
+    color: #666;
+    font-size: 12px;
+}
+
+.myInfoContain .withdrawal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    gap: 4px
+}
+
+.myInfoContain .withdrawal-text .helper {
+    font-size: 16px;
+}
+
+.myInfoContain .withdrawal-text .withdrawal-btn {
+    font-size: 16px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .myInfoContain {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .myInfoContain .infoBox {
+        padding: 20px;
+        gap: 20px;
+    }
+
+
+    .myInfoContain .input-400 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .myInfoContain .input-400::placeholder {
+        font-size: 12px;
+    }
+
+    .myInfoContain .withdrawal-text .helper {
+        font-size: 14px;
+    }
+
+    .myInfoContain .withdrawal-text .withdrawal-btn {
+        font-size: 14px;
+    }
+
+    .myInfoContain .my-info-box>.item {
+        min-height: 48px;
+    }
+
+    .myInfoContain .my-info-box>.item>.title {
+        font-size: 14px;
+        width: 100px;
+        word-break: keep-all;
+    }
+
+    .myInfoContain .my-info-box>.item>.value {
+        font-size: 14px;
+        width: calc(100% - 100px)
+    }
+
+    .myInfoContain .my-info-box>.item>.value .helper {
+        font-size: 12px;
+    }
+
+    .pass-change-btn {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,156 @@
+.jobOfferAddContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 20px 0px;
+}
+
+.jobOfferAddContain .infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background-color: #FFF;
+    padding: 40px;
+}
+
+.jobOfferAddContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+
+.jobOfferAddContain .confirm-box {
+    display: flex;
+    padding: 20px;
+    gap: 12px;
+}
+
+.jobOfferAddContain .job-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.jobOfferAddContain .job-info .list {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid #DDD
+}
+
+.jobOfferAddContain .job-info .list .row {
+    display: flex;
+    min-height: 56px;
+    gap: 12px;
+
+    border-bottom: 1px solid #DDD
+}
+
+.jobOfferAddContain .job-info .list .row>.title {
+    display: flex;
+    width: 160px;
+    /* height: 100%; */
+    flex-shrink: 0;
+    align-items: center;
+    padding: 20px 12px;
+
+    color: #666;
+    font-size: 16px;
+    background-color: #F1F1F1;
+}
+
+.jobOfferAddContain .job-info .list .row>.value {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #2F3444;
+    font-size: 16px;
+    gap: 8px;
+}
+
+.jobOfferAddContain .company-help {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    color: #666;
+    font-size: 14px;
+}
+
+.jobOfferAddContain .unit {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    color: #666;
+    font-size: 14px;
+}
+
+.jobOfferAddContain .selector-148 {
+    width: 148px;
+}
+
+.jobOfferAddContain .selector-280 {
+    width: 280px;
+}
+
+.jobOfferAddContain .input-100 {
+    width: 100px;
+}
+
+.jobOfferAddContain .input-160 {
+    width: 160px;
+}
+
+.jobOfferAddContain .input-200 {
+    width: 200px;
+}
+
+.jobOfferAddContain .input-400 {
+    width: 400px;
+}
+
+.jobOfferAddContain .text-box {
+    width: 100%;
+    margin: 8px 0px;
+    height: 200px;
+    padding: 12px;
+
+    font-size: 16px;
+    border-radius: 4px;
+    border-color: #DDD;
+
+    resize: none;
+}
+
+@media (max-width: 800px) {
+    .jobOfferAddContain {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .jobOfferAddContain .infoBox {
+        padding: 20px
+    }
+
+    .jobOfferAddContain .selector-148 {
+        width: calc(50% - 4px);
+    }
+
+    .jobOfferAddContain .input-400 {
+        width: 100%;
+    }
+
+    .jobOfferAddContain .input-200 {
+        width: calc(100% - 34px);
+    }
+
+    .jobOfferAddContain .job-info .list .row>.title {
+        width: 92px;
+        font-size: 14px;
+    }
+
+    .jobOfferAddContain .selector-280 {
+        width: 100%;
+    }
+}

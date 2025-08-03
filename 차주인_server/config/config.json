@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "CARMASTER",
+    "host": "localhost",
+    "dialect": "mysql",
+    "timezone": "+09:00",	
+    "logging": false
+  },
+  "test": {
+    "username": "root",
+    "password": "yaeeun0811!!",
+    "database": "CARMASTER",
+    "host": "localhost",
+    "dialect": "mysql",
+    "timezone": "+09:00",	
+    "logging": false
+  },
+  "production": {
+    "username": "root",
+    "password": "yaeeun0811!!",
+    "database": "CARMASTER",
+    "host": "localhost",
+    "dialect": "mysql",
+    "timezone": "+09:00",	
+    "logging": false
+  }
+}

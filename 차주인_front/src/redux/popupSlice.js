@@ -1,0 +1,187 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+const popupSlice = createSlice({
+    name: 'popup',
+    initialState: {
+        open: false,
+        alert: false,
+        title: "",
+        titleImg: "",
+        titleviewer: true,
+        subtitle: "",
+        title_estimate: "",
+        titleLong: "",
+        button: "확인",
+        buttonCencle: "",
+        onCancelPress: "",
+        onCancelPressAlert: "",
+        buttonStyle: "",
+        onPress: "",
+        onSubmit: "",
+        content: "",
+        message: "",
+        component: "",
+        subMessage: "",
+        subComponent: "",
+        messageAuto: "",
+        wide: false,
+        wideOne: false,
+        slideWide: false,
+        certification: false,
+        today: false,
+        filter: false,
+        constInfo: false,
+        mideum: false,
+        suc: false,
+        one: false,
+        overFlow: false,
+        isNum: false,
+        reduxNumPage: 1,
+        activeIndex: 0,
+        isWhite_STORE: false,
+        titleColor: '#000',
+        buttontype: 'ones1',
+        warning: true,
+        loading: false,
+        img01: false,
+        img02: false,
+        callStack: 0,
+        confirms: false,
+        scrolling: false,
+        showflagdata: false,
+        noneMt: false,
+    },
+
+    reducers: {
+        open(state, action) {
+            state.open = true;
+            state.alert = action.payload.alert;
+            state.onCancelPress = action.payload.onCancelPress;
+            state.onPress = action.payload.onPress;
+            state.message = action.payload.message;
+            state.titleviewer = action.payload.titleviewer;
+
+            if (action.payload.titleImg) state.titleImg = action.payload.titleImg;
+            if (action.payload.noneMt) state.noneMt = action.payload.noneMt
+            if (action.payload.onCancelPressAlert) state.onCancelPressAlert = action.payload.onCancelPressAlert;
+            if (action.payload.buttonStyle) state.buttonStyle = action.payload.buttonStyle;
+            if (action.payload.title) state.title = action.payload.title;
+            if (action.payload.button) state.button = action.payload.button;
+            if (action.payload.buttonCencle) state.buttonCencle = action.payload.buttonCencle;
+            if (action.payload.isWhite_STORE) state.isWhite_STORE = action.payload.isWhite_STORE;
+
+            if (action.payload.component) state.component = action.payload.component;
+            if (action.payload.titleLong) state.titleLong = action.payload.titleLong;
+            if (action.payload.content) state.content = action.payload.content;
+            if (action.payload.subMessage) state.subMessage = action.payload.subMessage;
+            if (action.payload.subComponent) state.subComponent = action.payload.subComponent;
+            if (action.payload.messageAuto) state.messageAuto = action.payload.messageAuto;
+            if (action.payload.wide) state.wide = action.payload.wide;
+            if (action.payload.wideOne) state.wideOne = action.payload.wideOne;
+            if (action.payload.slideWide) state.slideWide = action.payload.slideWide;
+            if (action.payload.certification) state.certification = action.payload.certification;
+            if (action.payload.filter) state.filter = action.payload.filter;
+            if (action.payload.constInfo) state.constInfo = action.payload.constInfo;
+            if (action.payload.today) state.today = action.payload.today;
+            if (action.payload.mideum) state.mideum = action.payload.mideum;
+            if (action.payload.suc) state.suc = action.payload.suc;
+            if (action.payload.one) state.one = action.payload.one;
+            if (action.payload.onSubmit) state.onSubmit = action.payload.onSubmit;
+
+            if (action.payload.overFlow) state.overFlow = action.payload.overFlow;
+            if (action.payload.isNum) state.isNum = action.payload.isNum;
+            if (action.payload.activeIndex) state.activeIndex = action.payload.activeIndex;
+            if (action.payload.titleColor) state.titleColor = action.payload.titleColor;
+            if (action.payload.buttontype) state.buttontype = action.payload.buttontype;
+            if (action.payload.warning) state.warning = action.payload.warning;
+            if (action.payload.loading) state.loading = action.payload.loading;
+            if (action.payload.img01) state.img01 = action.payload.img01;
+            if (action.payload.img02) state.img02 = action.payload.img02;
+            state.confirms = action.payload.confirms;
+            state.scrolling = action.payload.scrolling;
+
+        },
+        close(state) {
+            state.open = false;
+            state.confirms = false;
+            state.scrolling = false;
+            state.alert = false;
+            state.title = "";
+            state.titleviewer = true;
+            state.subtitle = "";
+            state.content = "";
+            state.onCancelPress = "";
+            state.onPress = "";
+            state.onCancelPressAlert = "";
+            state.buttonStyle = "";
+            state.button = "확인";
+            state.buttonCencle = "";
+            state.message = "";
+            state.component = "";
+            state.titleLong = "";
+            state.subMessage = "";
+            state.subComponent = "";
+            state.messageAuto = "";
+            state.wide = false;
+            state.wideOne = false;
+            state.slideWide = false;
+            state.certification = false;
+            state.filter = false;
+            state.constInfo = false;
+            state.today = false;
+            state.mideum = false;
+            state.suc = false;
+            state.one = false;
+            state.onSubmit = "";
+            state.overFlow = false;
+            state.isNum = false;
+            state.reduxNumPage = 1;
+            state.activeIndex = 0;
+            state.isWhite_STORE = false;
+            state.loading = false;
+            state.img01 = false;
+            state.img02 = false;
+            state.noneMt = false;
+        },
+        showclose(state) {
+            state.open = false;
+            state.showflagdata = false;
+        },
+        callStackUp(state) {
+            state.callStack = state.callStack + 1;
+        },
+        callStackReset(state) {
+            state.callStack = 0;
+        },
+        handleReduxPage(state, action) {
+            state.reduxNumPage = action.payload.reduxNumPage;
+        },
+        loadingflas(state, action) {
+            state.loading = action.payload.loading;
+        },
+        showLoginPopup(state, action) {
+            state.open = true;
+            state.content = "로그인이 필요한 서비스입니다."
+            state.onCancelPress = false
+            state.titleviewer = false
+            state.button = "확인"
+
+            if (action.payload.onPress) {
+                state.onPress = action.payload.onPress
+            }
+        }
+    },
+});
+
+export const {
+    open,
+    close,
+    showclose,
+    callStackUp,
+    handleReduxPage,
+    callStackReset,
+    loadingflas,
+    showLoginPopup
+} = popupSlice.actions;
+
+export default popupSlice.reducer;

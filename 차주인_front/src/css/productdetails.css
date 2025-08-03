@@ -1,0 +1,515 @@
+.ProductDetailArea {
+    position: fixed; lefT: 0px; top: 0px; width: 100%; height: 100%; z-index: 1002;
+}
+.AlertPopArea {
+    position: absolute; lefT: 0px; top: 0px; width: 100%; height: 100%; z-index: 1002;
+}
+.ProductDetailArea > div {
+    position: relative; width: 100%; height: 100%; overflow: auto;
+    display: flex; align-items: center; justify-content: flex-start; flex-direction: column; gap: 100px;
+}
+.ProductDetailAreaBG {
+    position: fixed; lefT: 0px; top: 0px;
+    width: 100%; height: 100%; z-index: 1003;
+    background-color: rgba(0,0,0,0.5);
+}
+.AlertPopAreaBG {
+    position: fixed; lefT: 0px; top: 0px;
+    width: 100%; height: 100%; z-index: 1003;
+    background-color: rgba(0,0,0,0);
+}
+.ProductDetailpop {
+    position: relative; background-color: #fff; z-index: 1004;
+    width: 1200px; 
+}
+.ProductSendDetailpop {
+    position: relative; background-color: #fff; z-index: 1004;
+    width: 600px; border-radius: 8px;
+}
+.ProductSendDetailpop.wd500 {
+    width: 500px; 
+}
+.ProductSendDetailpop2 {
+    position: relative; background-color: #fff; z-index: 1004;
+    width: 940px; border-radius: 8px;
+}
+.ProductSendDetailpop2 > div.doubleArea {
+    display: flex; align-items: flex-start; justify-content: space-between;
+}
+.ProductSendDetailpop2 > div.doubleArea > div:nth-child(1) {
+    width: calc(100% - 340px);
+}
+.ProductSendDetailpop2 > div.doubleArea > div:nth-child(2) {
+    width: 340px; padding: 20px;
+}
+.ProductSendnolistpop {
+    position: relative; background-color: #fff; z-index: 1004;
+    width: 500px; border-radius: 8px;
+}
+
+.ProductpopTitle {
+    display: flex; align-items: center; justify-content: space-between;
+}
+.ProductpopTitle > span {
+    font-size: 24px; font-weight: 700;
+}
+.ProductDetailpop > div.ProductpopTitle {
+    border-bottom: 1px solid #DDD;
+}
+
+.AlertPoplistArea {
+    position: absolute; right: 10px; top: 66px; width: 400px; z-index: 1004;
+    background-color: #fff; border-radius: 12px;
+    border: 1px solid #CCC;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);    
+}
+
+.slidenavigateButton {
+    position: absolute; z-index: 1000; top: calc(50% - 14px); left: 0px; right: auto;
+    width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.slidenavigateButton.right {
+    right: 0px; left: auto;
+}
+.productDetailSlider {
+    width: 100%; height: 240px; background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+.setstyles {
+    min-width: 72px; height: 32px; border: 1px solid #fff; border-left: 6px solid #fff; background-color: #fff;
+    display: flex; align-items: center; justify-content: flex-start; padding-left: 6px;
+}
+.setstyles.black { border: 1px solid #333; border-left: 6px solid #333; }
+.setstyles.green { border: 1px solid #33D330; border-left: 6px solid #33D330; }
+.setstyles.blue { border: 1px solid #5C96ED; border-left: 6px solid #5C96ED; }
+.setstyles.red { border: 1px solid #F00; border-left: 6px solid #F00; }
+.setstyles.orange { border: 1px solid #FF820F; border-left: 6px solid #FF820F; }
+.setstyles.gray { border: 1px solid #CCC; border-left: 6px solid #CCC; }
+
+.ProductpopContents {
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: row;
+    width: 100%;  background-color: #F2F4F7;
+}
+.ProductpopContentsLeft {
+    width: 400px; border-right: 1px solid #DDD; background-color: #fff;
+}
+.ProductpopContentsRight {
+    width: calc(100% - 400px);
+}
+.ProductpopContentsRightarea {
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column; gap: 20px;
+}
+.ProductpopContentsRightarea > div {
+    width: 100%;
+}
+.productinfoArea1 {
+    border-bottom: 4px solid #F2F4F7;
+}
+.productnumberinfos {
+    display: flex; align-items: center; justify-content: space-between;
+}
+.linedotTxt {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.linedotTxt > span:nth-child(2) {
+    display: inline-block; width: 1px; height: 12px; background-color: #CCC;
+}
+.productinfos1 {
+    display: flex; align-items: center; justify-content: flex-start; margin-top: 8px;
+}
+.productinfos1 > .linedotTxt {
+    padding: 8px 12px; border: 1px solid #CCC; border-radius: 40px;
+}
+.productinfos1.styles1 { font-size: 20px; }
+.productinfos1.styles3 { margin-top: 12px; }
+.productinfos1.styles4 { margin-top: 12px; padding: 12px 20px; border-radius: 4px; background-color: #F2F4F7; font-size: 16px; font-weight: 700; }
+.productinfos1.styles5 { padding: 12px 20px; border-radius: 4px; border: 1px solid #F2F4F7; }
+
+.productinfoArea2 {
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column;
+    gap: 20px;
+}
+.productinfoArea2 > div {
+    width: 100%;
+}
+.productinfoArea2 > div > div.title_txt {
+    font-size: 16px;
+}
+.productinfoArea2 > div > div.infos {
+    margin-top: 8px; border-top: 1px solid #DDD;
+}
+.productinfoArea2 > div > div.infos > div {
+    display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #DDD;
+}
+.productinfoArea2 > div > div.infos > div > div {
+    height: 33px; padding: 0px 8px; display: flex; align-items: center; justify-content: flex-start;
+}
+.productinfoArea2 > div > div.infos > div > div:nth-child(1) {
+    width: 100px; background-color: #F1F1F1;
+}
+.productinfoArea2 > div > div.infos > div > div:nth-child(2) {
+    width: calc(100% - 100px);
+}
+.productinfoArea2 > div > div.textareasinput { margin-top: 8px; } 
+.productinfoArea2 > div > div.textareasinput > textarea {
+    border-radius: 4px; padding: 12px; border: 1px solid #DDD; height: 100px; width: 100%;
+}
+.productinfoArea2 > div > div.buttons { display: flex; align-items: center; justify-content: flex-end; margin-top: 8px; }
+.productinfoArea2 > div > div.buttons > button.productIssuebuttons {
+    width: 49px; height: 33px; border-radius: 4px; border: 1px solid #333; font-weight: 700;
+}
+
+.ProductSendProfile {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.ProductSendProfile > div:nth-child(1) {
+    width: 64px; height: 64px; border: 1px solid #EEE; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+}
+.ProductSendProfile > div:nth-child(2) {
+    width: calc(100% - 84px); display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 4px;
+}
+.ProductSendProfile > div:nth-child(2) > div:nth-child(2) { font-size: 20px; font-weight: 700;}
+
+.ProductSendInfos > div.infoTxts {
+    display: flex; align-items: center; justify-content: space-between; padding: 12px 20px;
+    background-color: #F1F1F1;
+}
+.ProductSendInfos > div.infos {
+    border-top: 1px solid #DDD;
+}
+.ProductSendInfos > div.infos > div {
+    display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #DDD;
+}
+.ProductSendInfos > div.infos > div > div {
+    height: 33px; padding: 0px 8px; display: flex; align-items: center; justify-content: flex-start;
+}
+.ProductSendInfos > div.infos > div > div:nth-child(1) {
+    width: 100px; background-color: #F1F1F1;
+}
+.ProductSendInfos > div.infos > div > div:nth-child(2) {
+    width: calc(100% - 100px);
+}
+.sendmemobutton {
+    background-color: #6164A5; padding: 4px 12px; font-size: 12px; font-weight: 700; color: #fff; border-radius: 100px;
+}
+
+.Trophyarea {
+    display: flex; align-items: center; justify-content: center; gap: 4px;
+}
+.Trophyarea > span {
+    font-size: 20px; font-weight: 700;
+}
+.Trophystickarea {
+    display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px;
+}
+.Trophystickarea > .trophysticker {
+    border-radius: 4px; padding: 4px 12px;
+    border: 1px solid #6164A5; font-size: 12px; font-weight: 700;
+    background: #E1E2FC; color: #6164A5;
+}
+.Trophystickarea > .trophysticker.style1 {
+    border: 1px solid #FF820F; background: #FF820F; color: #fff;
+}
+.Trophystickarea > .trophysticker.style2 {
+    border: 1px solid #6164A5; background: #6164A5; color: #fff;
+}
+.Trophystickarea > .trophysticker.style3 {
+    border: 1px solid #6164A5; background: #fff; color: #6164A5;
+}
+.Trophyphone {
+    display: flex; align-items: center; justify-content: center; margin-top: 20px;
+    font-size: 20px; font-weight: 700;
+}
+.Trophyaddr {
+    display: flex; align-items: center; justify-content: center; margin-top: 8px;
+    color: #666;
+}
+.Trophycountinfo {
+    display: flex; align-items: center; justify-content: center; margin-top: 20px;
+    border-radius: 8px; padding: 20px;
+    border: 1px solid #DDD;
+    background: #FFF;
+    -webkit-box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.1);
+}
+.Trophycountinfo > div {
+    width: 175px; display: flex; align-items: center; justify-content: center; flex-direction: column;
+    text-align: center; color: #666; font-size: 12px; gap: 8px;
+}
+.Trophycountinfo > div > div:nth-child(1) { color: #666; font-size: 12px; }
+.Trophycountinfo > div > div:nth-child(2) { font-weight: 700; font-size: 20px; }
+.Trophycountinfo > div > div.lightblue { color: #6164A5; }
+.Trophycountinfo > div:nth-child(2) {
+    border-left: 1px solid #DDD; border-right: 1px solid #DDD;
+}
+
+.checkComment {
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 8px; margin-top: 8px;
+}
+.checkComment > div {
+    display: flex; align-items: flex-start; justify-content: center; 
+}
+.checkComment > div > div:nth-child(1) {
+    width: 20px; font-size: 12px;
+}
+.checkComment > div > div:nth-child(2) {
+    width: calc(100% - 20px); font-size: 12px;
+}
+
+.producttogetheralertArea {
+    width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;
+}
+.producttogetheralertArea > div:nth-child(1) {
+    font-size: 20px; font-weight: 700;
+}
+.producttogetheralertArea > div:nth-child(3) {
+    padding: 20px; border-radius: 4px; background:#F1F1F1;
+}
+
+.producttogetheralertArea2 {
+    width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;
+}
+.producttogetheralertArea2 > div:nth-child(1) {
+    font-size: 14px;
+}
+.producttogetheralertArea2 > div:nth-child(2) {
+    padding: 20px; border-radius: 4px; background:#F1F1F1;
+}
+
+.AlertPoplistArea > div.titleTxt {
+    padding: 20px; font-size: 20px; font-weight: 700;
+}
+.AlertPoplistArea > div.subtitleTxt {
+    padding: 0px 20px; height: 36px; display: flex; align-items: center; justify-content: space-between;
+    background-color: #EEE;
+}
+.AlertPoplistArea > div.subtitleTxt > div {
+    display: flex; align-items: center; justify-content: center; gap: 4px;
+    font-size: 16px; font-weight: 700; 
+}
+.AlertPoplistArea > div.subtitleTxt > div > span {
+    font-size: 16px; font-weight: 700;
+}
+.AlertPoplistArea > div.subtitleTxt > button {
+    text-decoration: underline;
+}
+.AlertPoplistArea > div.bell_listArea {
+    padding: 0px 20px;
+}
+.AlertPoplistArea > div.bell_listArea > div {
+    padding: 12px 0px; border-bottom: 1px solid #EEE; display: flex; align-items: flex-start; justify-content: center; gap: 6px;
+    flex-direction: column;
+}
+.AlertPoplistArea > div.bell_listArea > div > div:nth-child(1) {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%;
+}
+.AlertPoplistArea > div.bell_listArea > div > div:nth-child(1) > span {
+    color: #666; font-size: 12px;
+}
+.AlertPoplistArea > div.bell_listArea > div > div.comments {
+    width: 100%;
+}
+div.alertPoptypebuttons {
+    margin-top: 4px;
+}
+div.alertPoptypebuttons > button {
+    text-decoration: underline; font-size: 12px; font-weight: 700; color: #6164A5;
+}
+.AlertPoplistArea > div.bellmoreButtons {
+    display: flex; align-items: center; justify-content: center; margin: 20px auto 0px;
+}
+.alerPoptypestickers { margin-bottom: 4px;}
+.alerPoptypestickers > span {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #E1E2FC;    
+}
+
+.matchinglist { margin-top: 8px; display: flex; align-items: flex-start; justify-content: center; flex-direction: column;  gap: 8px;}
+.matchinglist > div {
+    padding: 20px; border-radius: 12px; border: 1px solid #DDD;
+    width: 100%;
+}
+
+.productdamdangArea {
+    display: flex; align-items: center; justify-content: space-between; flex-direction: column;
+    gap: 12px; width: 100%;
+}
+.productdamdangArea > div {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: 100%;
+}
+.productdamdangArea > div > div:nth-child(1) {
+    width: 80px; color: #666;
+}
+.productdamdangArea > div > div:nth-child(2) {
+    width: calc(100% - 80px);
+}
+.productdamdangArea > div:nth-child(3) {
+    margin: 8px 0px;
+}
+
+.infoviewstyle1 {
+    border: 1px solid #333; border-radius: 8px; padding: 20px;
+    width: 100%;
+}
+.infoviewstyle1 > div:nth-child(1) {
+    display: flex; align-items: center; justify-content: space-between;
+}
+.infoviewstyle1 > div:nth-child(1) > button:nth-child(1) {
+    display: flex; align-items: center; justify-content: center; 
+}
+.infoviewstyle1 > div:nth-child(1) > button:nth-child(2) {
+    font-size: 12px; color: #6164A5; text-decoration: underline;
+}
+.infoviewstyle1 > div:nth-child(2) {
+    margin-top: 10px;
+}
+.infoviewstyle1 > div:nth-child(2) > div {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    border-bottom: 1px solid #ddd; padding: 4px 0px;
+}
+.infoviewstyle1 > div:nth-child(2) > div > div:nth-child(1) { width: 90px; font-size: 12px; }
+.infoviewstyle1 > div:nth-child(2) > div > div:nth-child(2) { width: calc(100% - 98px); font-size: 12px; }
+
+.infoviewstyle2 {
+    border: 1px solid #333; border-radius: 8px; padding: 20px;
+    width: 100%;
+}
+.infoviewstyle2 > div:nth-child(1) {
+    display: flex; align-items: center; justify-content: space-between;
+}
+.infoviewstyle2 > div:nth-child(1) > button:nth-child(1) {
+    display: flex; align-items: center; justify-content: center; 
+}
+.infoviewstyle2 > div:nth-child(1) > button:nth-child(2) {
+    font-size: 12px; color: #6164A5; text-decoration: underline;
+}
+.infoviewstyle2 > div:nth-child(2) {
+    margin-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+}
+.infoviewstyle2 > div:nth-child(3) {
+    margin-top: 8px; 
+}
+.infoviewstyle2 > div:nth-child(3) > div {
+    border-bottom: 1px solid #ddd; padding: 4px 0px;
+    display: flex; align-items: flex-start; justify-content: space-between;
+}
+.infoviewstyle2 > div:nth-child(3) > div > div {
+    width: 30%; text-align: center; font-size: 12px;
+}
+.infoviewstyle2 > div:nth-child(3) > div > div:nth-child(1),
+.infoviewstyle2 > div:nth-child(3) > div > div:nth-child(2) {
+    width: 20%;
+}
+
+div.meetinglist > div {
+    display: flex; align-items: flex-start; justify-content: space-between; margin-top: 8px; 
+}
+div.meetinglist > div > div {
+    display: flex; align-items: flex-start; justify-content: flex-start;
+}
+div.meetinglist > div > div:nth-child(1) {
+    width: 90px; font-weight: 700; display: flex; align-items: center; justify-content: flex-start; gap: 4px;
+}
+div.meetinglist > div > div:nth-child(2) {
+    width: calc(100% - 90px);
+}
+
+.sendonoffArea {
+    display: flex; align-items: center; justify-content: flex-start; gap: 8px;
+}
+.sendonoffArea > div {
+    width: 160px;
+}
+.productsendlistArea {
+    margin-top: 8px; display: flex; align-items: center; justify-content: space-between;
+    padding: 12px;border-radius: 4px; border: 1px solid #DDD;
+}
+.productsendlistArea > div:nth-child(1) {
+    display: flex; align-items: flex-start; justify-content: space-between; flex-direction: column; gap: 8px;
+}
+.productsendlistArea > div:nth-child(2) {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.QusPop1area > div:nth-child(1) {
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 12px;
+    border-bottom: 1px solid #EEE; padding-bottom: 20px; margin-bottom: 20px;
+}
+.QusPop1area > div:nth-child(1) > div.QusPop1areacontents {
+    display: flex; flex-direction: column; gap: 4px;
+}
+.QusPop1area > div:nth-child(1) > div.QusPop1areacontents > div:nth-child(2) > div {
+    display: flex; align-items: flex-start; justify-content: flex-start;
+}
+.QusPop1area > div:nth-child(1) > div.QusPop1areacontents > div:nth-child(2) > div > span {
+    display: inline-block; width: 3px; height: 3px; background-color: #333; border-radius: 50%; margin-left: 10px; margin-right: 10px;
+    margin-top: 6px;
+}
+.QusPop1area > div:nth-child(1) > div.QusPop1areacontents > div:nth-child(2) > div > p {
+    width: calc(100% - 23px)
+}
+
+
+.mettingArea {
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 20px;
+}
+
+.mettingArea > div.tips {
+    padding: 20px; background-color: #F1F1F1; border-radius: 8px; width: 100%;
+}
+.mettingArea > div.tips > div.tipcontents {
+    display: flex; align-items: flex-start; justify-content: flex-start; 
+}
+.mettingArea > div.tips > div.tipcontents > span {
+    display: inline-block; width: 20px; padding-left: 5px; 
+}
+.mettingArea > div.tips > div.tipcontents > p {
+    width: calc(100% - 20px)
+}
+.mettingArea > div.meethistoryForm {
+    width: 100%;
+}
+.mettingArea > div.meethistoryForm > div:nth-child(1) {
+    display: flex; align-items: center; justify-content: flex-start;
+}
+.mettingArea > div.meethistoryForm > div:nth-child(2) {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-top: 9px;
+}
+.mettingArea > div.meethistoryForm > div:nth-child(2) > div:nth-child(1) {
+    width: calc(100% - 88px);
+}
+.mettingArea > div.meethistoryForm > div:nth-child(2) > div:nth-child(1) > textarea {
+    width: 100%; border-radius: 4px;border: 1px solid  #DDD; height: 40px; padding: 4px 12px;
+}
+.mettingArea > div.meethistoryForm > div:nth-child(2) > div:nth-child(2) {
+    width: 80px;
+}
+.meettingdatalist {
+     display: flex; align-items: flex-start; justify-content: flex-start; flex-direction: column; gap: 8px;
+     width: 100%;
+}
+.meettingdatalist > div {
+    border-radius: 8px; border: 1px solid #6164A5; width: 100%; padding: 20px; 
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 8px;
+}
+.meettingdatalist > div > div {
+    display: flex; align-items: center; justify-content: space-between; width: 100%;
+}
+
+.favoritArea {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    flex-wrap: wrap; margin-top: 20px;
+}
+.favoritArea > div {
+    width: calc(50% - 10px); border-radius: 12px; border: 1px solid #DDD;
+    padding: 20px;
+
+}

@@ -1,0 +1,238 @@
+.pageMyContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    background-color: #FFF;
+}
+
+.pageMyContain .user-info {
+    margin-top: 32px;
+    display: flex;
+    gap: 20px;
+}
+
+.pageMyContain .profile-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 96px;
+    height: 72px;
+
+}
+
+.pageMyContain .profile-img .profile {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    border: 1px solid #EEE
+}
+
+.pageMyContain .profile-img .edit-poto {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+
+    bottom: 0;
+    right: 0;
+    
+    object-fit: none !important;
+    cursor: pointer;
+    background-color: #3B4894;
+    border-radius: 50%;
+}
+
+.pageMyContain .user-info>.box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.pageMyContain .user-info>.box .btn-box {
+    width: 102px;
+}
+
+.pageMyContain .user-info>.box .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageMyContain .user-info>.box .info .name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pageMyContain .user-info>.box .info .user-id {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    margin-top: 8px;
+}
+
+.pageMyContain .user-info>.box .info .user-id.kakao::before {
+    content: url("../images/icon-kakao.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.pageMyContain .user-info>.box .info .user-id.naver::before {
+    content: url("../images/icon_naver.png");
+    width: 24px;
+    height: 24px;
+}
+
+.pageMyContain .view-box1 {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.pageMyContain .view-box1 .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+
+    border-radius: 8px;
+    border: 1px solid #DDD;
+
+    cursor: pointer;
+}
+
+.pageMyContain .view-box1 .card .title {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 4px;
+}
+
+.pageMyContain .view-box1 .card .title.point::before {
+    content: url("../images/copper-coin-line.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.pageMyContain .view-box1 .card .title.calendar::before {
+    content: url("../images/calendar-2-line.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.pageMyContain .view-box1 .card .value {
+    color: #3B4894;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pageMyContain .view-box2 {
+    margin: 20px 0px;
+    display: flex;
+    padding: 22px;
+    border-radius: 8px;
+    border: 1px solid #DDD;
+}
+
+.pageMyContain .view-box2 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+.pageMyContain .view-box2 .card:nth-child(n+2) {
+    border-left: 1px solid #EEEEEE;
+}
+
+.pageMyContain .view-box2 .card .title {
+    color: #3B4894;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pageMyContain .view-box2 .card .value {
+    color: #666;
+    font-size: 14px;
+}
+
+.pageMyContain .list-menu {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #DDD;
+    padding: 12px 0px;
+}
+
+.pageMyContain .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+
+.pageMyContain .menu-item>.title {
+    font-size: 16px;
+}
+
+.pageMyContain .menu-item>img {
+    width: 20px;
+    height: 20px;
+}
+
+.pageMyContain .logout-btn {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageMyContain .logout-btn .text {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .pageMyContain {
+        width: 100%;
+        margin: 0;
+        padding: 20px
+    }
+
+    .pageMyContain .user-info>.box {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .pageMyContain .user-info>.box .info .user-id {
+        font-size: 14px;
+    }
+
+    .pageMyContain .view-box1 {
+        flex-direction: column;
+        gap: 8px
+    }
+
+    .pageMyContain .view-box1 .card {
+        padding: 12px 20px;
+    }
+
+    .pageMyContain .view-box2 {
+        padding: 8px 0px;
+    }
+
+    .pageMyContain .view-box2 .card {
+        padding: 12px 0px;
+    }
+
+    .pageMyContain .view-box2 .card .title {
+        font-size: 32px;
+    }
+
+}

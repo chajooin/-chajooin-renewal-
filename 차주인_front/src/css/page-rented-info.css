@@ -1,0 +1,613 @@
+.rentedInfoContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+    margin-bottom: 40px;
+}
+
+.rentedInfoContain .swiperBox .imgLongBox {
+    padding: 20px 0px 20px 20px;
+}
+
+.rentedInfoContain .swiperBox .smallImg {
+    width: 72px;
+    height: 72px;
+}
+
+.rentedInfoContain .infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: #FFF;
+    padding: 40px;
+}
+
+.rentedInfoContain .carInfoBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rentedInfoContain .carInfoBox .state {
+    margin-top: 8px;
+    border-radius: 100px;
+    padding: 4px 12px;
+    background: #DDD;
+    color: #999;
+}
+
+.rentedInfoContain .carInfoBox .info {
+    margin-top: 12px;
+    color: #666;
+}
+
+.rentedInfoContain .carInfoBox .subInfo {
+    display: flex;
+    margin-top: 20px;
+    color: #666;
+    gap: 20px;
+}
+
+.rented-circle-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.rented-circle-card>.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+
+    font-size: 16px;
+    font-weight: 700;
+    gap: 4px;
+    border-radius: 100px;
+    background: #F2F4F7;
+}
+
+.rented-circle-card>.circle>img {
+    width: 36px;
+    height: 36px;
+}
+
+.rented-circle-card>.circle>.number {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: #3B4894;
+    border-radius: 100px;
+    background: #D7E7FF;
+}
+
+.rented-circle-card>.text {
+    color: #666;
+}
+
+.rentedInfoContain .carInfoBox .msg {
+    margin-top: 20px;
+    color: #666;
+}
+
+.rentedInfoContain .sellerInfoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.seller-report-btn {
+    width: 100px;
+}
+
+.rented-seller-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rented-seller-info>.iconBox {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #EEE;
+}
+
+.rented-seller-info>.iconBox img {
+    width: 80px;
+    height: 80px;
+}
+
+.rented-seller-info>.detailInfoBox img {
+    width: 40px;
+    height: 40px;
+}
+
+.rented-seller-info>.detailInfoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rented-seller-info>.detailInfoBox>.info {
+    display: flex;
+
+}
+
+.rented-seller-info>.detailInfoBox>.info .title {
+    width: 60px;
+    flex-shrink: 0;
+
+    color: #666;
+    font-size: 16px;
+}
+
+.rented-seller-info>.detailInfoBox>.info .text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.rented-seller-btnbox {
+    display: flex;
+    align-items: center;
+    width: 248px;
+    height: 40px;
+    gap: 8px;
+}
+
+.rentedInfoContain .button {
+    display: flex;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #3B4894;
+}
+
+.rentedInfoContain .white {
+    background-color: #FFF;
+    color: var(--Primary, #3B4894);
+    border: 1px solid #3B4894;
+}
+
+.rented-default-info {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.rented-default-info>.infos-box {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    gap: 20px;
+}
+
+.rented-default-info .detailBox {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #DDD
+}
+
+.rented-default-info .detailBox>.row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 12px;
+
+    border-bottom: 1px solid #DDD
+}
+
+.rented-default-info .detailBox>.row>.title {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0px 12px;
+
+    color: #666;
+    font-size: 14px;
+    background-color: #F1F1F1;
+}
+
+.rented-default-info .detailBox>.row>.text {
+    color: #2F3444;
+    font-size: 14px;
+}
+
+.rented-price-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.rented-price-info>.row-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rented-price-info>.row-price>.title {
+    display: flex;
+    font-size: 16px;
+    color: #666;
+}
+
+.rented-price-info>.row-price .number {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 12px;
+
+    font-size: 14px;
+    color: #3B4894;
+    border-radius: 100px;
+    background: #D7E7FF;
+}
+
+.rented-price-info>.row-price>.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.rented-price-info>.row-total {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rented-price-info>.row-total>.title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rented-price-info>.row-total>.price {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rented-option-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.rented-option-info>.sub-option {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rented-option-info>.sub-option>.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rented-option-info>.sub-option>.list {
+    display: flex;
+    gap: 20px;
+}
+
+.rented-detail-info {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.rented-detail-info>.car-image {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.rented-paper-call {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.rented-paper-btnBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.rented-paper-btnBox>.rented-paper-box {
+    width: 240px;
+}
+
+.rented-paper-btnBox>.rented-call-box {
+    display: flex;
+    width: 240px;
+    gap: 8px;
+}
+
+.rented-paper-call-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+
+    border-radius: 4px;
+    background: #F1F3FF;
+}
+
+.rented-paper-call-info>.bold {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.rented-paper-call-info>.info {
+    line-height: 20px;
+}
+
+.rented-paper-call-info>.info ol {
+    padding-inline-start: 20px;
+    margin: 0px;
+}
+
+.rented-paper-call-info>.info li {
+    font-size: 14px;
+    list-style: decimal;
+}
+
+.rented-paper-call-info>.red {
+    color: #F00;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.rented-paper-call-edit>.edit-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-top: 20px;
+    border-top: 1px solid #DDD;
+}
+
+.rented-paper-call-edit>.edit-box .edit-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 1px solid #DDD;
+}
+
+.rented-paper-call-edit>.edit-box>.edit-row>.title {
+    display: flex;
+    /* align-items: center; */
+    width: 120px;
+    color: #666;
+    flex-shrink: 0;
+    padding: 18px 12px;
+
+    background-color: #F1F1F1;
+}
+
+.rented-paper-call-edit>.edit-box>.edit-row>.input-box {
+    display: flex;
+    align-items: center;
+    color: #666;
+
+    gap: 8px;
+}
+
+.rented-paper-call-edit>.edit-box>.edit-row>.input-box .inputs {
+    width: 300px;
+}
+
+.rented-paper-call-edit>.edit-box>.edit-row>.input-box .selBox {
+    width: 148px;
+}
+
+.rented-paper-call-edit>.edit-box>.edit-row>.input-box .text {
+    width: 500px;
+    margin: 8px 0px;
+    min-height: 180px;
+    padding: 12px;
+
+    font-size: 16px;
+    border-radius: 4px;
+    border-color: #DDD;
+
+    resize: none;
+}
+
+.rented-confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rented-confirm>.info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+@media (max-width: 800px) {
+    .rentedInfoContain {
+        width: 100%;
+    }
+
+    .rentedInfoContain .infoBox {
+        padding: 20px;
+    }
+
+    .rentedInfoContain .swiperBox .imgLongBox {
+        padding: 8px 0px 8px 8px;
+        overflow: hidden;
+    }
+
+    .rentedInfoContain .swiperBox .smallImg {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .rentedInfoContain .carInfoBox .subInfo {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .rentedInfoContain .carInfoBox .msg {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        word-break: keep-all;
+
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        text-wrap: balance;
+    }
+
+    .rented-seller-info>.detailInfoBox>.info .title {
+        font-size: 14px;
+    }
+
+    .rented-seller-info>.detailInfoBox>.info .text {
+        font-size: 14px;
+    }
+
+    .rentedInfoContain .sellerInfoBox {
+        flex-direction: column;
+    }
+
+    .rented-seller-btnbox {
+        width: 100%;
+    }
+
+    .rented-default-info {
+        flex-direction: column;
+    }
+
+    .rented-default-info .infos-box {
+        width: 100%;
+    }
+
+    .rented-default-info>.detailBox {
+        width: 100%;
+    }
+
+    .rented-price-info>.row-price>.title {
+        font-size: 14px;
+    }
+
+    .rented-price-info>.row-price .number {
+        font-size: 12px;
+    }
+
+    .rented-price-info>.row-price>.price {
+        font-size: 14px;
+    }
+
+    .rented-price-info>.row-total>.title {
+        font-size: 16px;
+    }
+
+    .rented-price-info>.row-total>.price {
+        font-size: 16px;
+    }
+
+    .rented-option-info>.sub-option>.title {
+        font-size: 16px;
+    }
+
+    .rented-detail-info>.text {
+        font-size: 14px;
+    }
+
+    .rented-detail-info>.car-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1.6;
+    }
+
+    .rented-paper-btnBox {
+        flex-direction: column;
+        gap: 12px
+    }
+
+    .rented-paper-call-info>.red {
+        font-size: 12px;
+    }
+
+    .rented-paper-call-edit>.edit-box>.edit-row>.title {
+        font-size: 14px;
+    }
+
+    .rented-paper-call-edit>.edit-box>.edit-row>.input-box {
+        width: 100%;
+    }
+
+    .rented-paper-call-edit>.edit-box>.edit-row>.input-box .text {
+        font-size: 14px;
+    }
+
+    .rented-confirm>.info {
+        font-size: 14px;
+    }
+
+    .rented-paper-btnBox>.rented-paper-box {
+        width: 100%;
+    }
+
+    .rented-paper-btnBox>.rented-call-box {
+        width: 100%;
+    }
+
+    .rented-paper-call-edit>.edit-box>.edit-row>.input-box .inputs {
+        width: 100%;
+    }
+
+    .rented-paper-call-edit>.edit-box>.edit-row>.input-box .selBox {
+        width: 100%;
+    }
+
+    .rented-paper-call-edit>.edit-box>.edit-row>.input-box .text {
+        width: 100%;
+    }
+}

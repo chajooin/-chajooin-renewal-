@@ -1,0 +1,98 @@
+.myPhoneContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* margin: 20px 0px; */
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.myPhoneContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+    background-color: #FFF;
+}
+
+.myPhoneContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+.myPhoneContain .infoBox .line {
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+}
+
+.myPhoneContain .input-315 {
+    width: 315px;
+}
+
+.myPhoneContain .big-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.myPhoneContain .phone-number-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.myPhoneContain .phone-number-box .title {
+    color: #666;
+    font-size: 16px;
+}
+
+.myPhoneContain .phone-number-box .box {
+    display: flex;
+    width: 400px;
+    gap: 4px;
+}
+
+.myPhoneContain .phone-number-box .box button:nth-child(n+1) {
+    flex-shrink: 0;
+}
+
+
+@media (max-width:800px) {
+    .myPhoneContain {
+        width: 100%;
+        margin: 0;
+    }
+
+    .myPhoneContain .infoBox {
+        padding: 20px;
+    }
+
+    .myPhoneContain .big-title {
+        font-size: 24px;
+    }
+
+    .myPhoneContain .phone-number-box .box {
+        width: 100%;
+    }
+
+    .myPhoneContain .input-315 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .myPhoneContain .input-315::placeholder {
+        font-size: 14px;
+    }
+
+    .myPhoneContain .infoBox {
+        gap: 20px
+    }
+
+    .myPhoneContain .phone-number-box .title {
+        font-size: 14px;
+    }
+
+    .myPhoneContain .phone-number-box .box button {
+        font-size: 14px;
+    }
+}

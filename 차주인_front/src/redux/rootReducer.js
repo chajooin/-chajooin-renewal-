@@ -1,0 +1,17 @@
+import { combineReducers } from 'redux';
+
+import popupReducer from './popupSlice';
+import bannerReducer from './bannerSlice';
+import userReducer from './userSlice';
+import configReducer from './configSlice';
+import homeReducer from './homeSlice'
+import pointReducer from './pointSlice'
+
+export default combineReducers({
+  configReducer,
+  userReducer,
+  popupReducer,
+  bannerReducer,
+  homeReducer,
+  pointReducer,
+});

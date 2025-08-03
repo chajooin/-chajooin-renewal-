@@ -1,0 +1,39 @@
+.rbc-month-header > div > span {
+    color: #666; 
+}
+.rbc-month-header > div:nth-child(1) > span {
+    color: #F00;
+}
+.rbc-month-header > div:nth-child(7) > span {
+    color: #0075FF; 
+}
+.rbc-header {
+    height: 35px; display: flex; align-items: center; justify-content: center;
+    background-color: #F1F1F1;
+}
+.rbc-off-range-bg {
+    background-color: #fff;
+}
+.rbc-off-range > button {
+    color: #ccc;
+}
+.rbc-row-segment {
+    padding: 0px 8px; margin-top: 2px;
+}
+
+.rbc-row-content {
+    min-height: 125px !important;
+}
+
+.rbc-month-row {
+    overflow: visible !important;
+}
+
+
+/* Assuming your container div has a class named 'calendar-container' */
+.calendar-container {
+    min-height: 100vh;
+}
+.rbc-overlay {
+    width: 200px;
+}

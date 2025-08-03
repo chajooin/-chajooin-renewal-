@@ -1,0 +1,170 @@
+.jobOfferInfoContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding-bottom: 20px;
+}
+
+.jobOfferInfoContain .infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background-color: #FFF;
+    padding: 40px;
+}
+
+.jobOfferInfoContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+.jobOfferInfoContain .offerInfoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.offer-report-btn {
+    display: flex;
+    justify-content: end;
+    width: 100px;
+}
+
+.job-offer-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.job-offer-info>.iconBox {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #EEE;
+}
+.job-offer-info>.iconBox img{
+    width: 80px;
+    height: 80px;
+}
+
+.job-offer-info>.detailInfoBox img {
+    width: 40px;
+    height: 40px;
+}
+
+.job-offer-info>.detailInfoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-offer-info>.detailInfoBox>.info {
+    display: flex;
+
+}
+
+.job-offer-info>.detailInfoBox>.info .title {
+    width: 60px;
+    flex-shrink: 0;
+
+    color: #666;
+    font-size: 16px;
+}
+
+.job-offer-info>.detailInfoBox>.info .text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.job-offer-btnbox {
+    display: flex;
+    align-items: center;
+    width: 248px;
+    height: 40px;
+    gap: 8px;
+}
+
+
+
+.jobOfferInfoContain .offer-info-box {
+    display: flex;
+    width: 100%;
+    gap: 40px
+}
+
+.jobOfferInfoContain .job-info {
+    display: flex;
+    width: calc(50% - 20px);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.jobOfferInfoContain .job-info .list {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid #DDD
+}
+
+.jobOfferInfoContain .job-info .list .row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 12px;
+
+    border-bottom: 1px solid #DDD
+}
+
+.jobOfferInfoContain .job-info .list .row>.title {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0px 12px;
+
+    color: #666;
+    font-size: 14px;
+    background-color: #F1F1F1;
+}
+
+.jobOfferInfoContain .job-info .list .row>.text {
+    color: #2F3444;
+    font-size: 14px;
+}
+
+.jobOfferInfoContain .detail-text {}
+
+
+@media (max-width: 800px) {
+    .jobOfferInfoContain {
+        width: 100%;
+    }
+
+    .jobOfferInfoContain .infoBox {
+        padding: 20px;
+    }
+
+    .jobOfferInfoContain .offer-info-box {
+        flex-direction: column;
+    }
+
+    .jobOfferInfoContain .job-info {
+        width: 100%;
+    }
+
+    .jobOfferInfoContain .offerInfoBox {
+        flex-direction: column;
+    }
+
+    .job-offer-btnbox {
+        width: 100%;
+    }
+}

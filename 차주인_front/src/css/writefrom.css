@@ -1,0 +1,123 @@
+
+.inputviewtype1 {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-top: 12px;
+}
+.inputviewtype1 > div:nth-child(1) { width: 90px; margin-top: 11px; text-align: left; }
+.inputviewtype1 > div:nth-child(2) { 
+    width: calc(100% - 98px); display: flex; align-items: center; justify-content: flex-start;
+    flex-wrap: wrap; gap: 1px;
+}
+.inputtextviewtype1 {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 12px;
+}
+.inputtextviewtype1 > div:nth-child(1) { width: 90px; text-align: left; }
+.inputtextviewtype1 > div:nth-child(2) { 
+    width: calc(100% - 98px); display: flex; align-items: center; justify-content: flex-start;
+    flex-wrap: wrap; gap: 1px; 
+}
+
+
+
+.inputviewtype1 > div:nth-child(2) > textarea {
+    width: 100%; height: 120px; border-radius: 4px; border: 1px solid #DDD; padding: 12px;
+}
+.writeRadiobutton {
+    width: calc(33.3333333% - 1px); height: 40px; background-color: #EEE; color: #999;
+}
+.writeRadiobutton.active {
+    background-color: #6164A5; color: #fff; font-weight: 700;
+}
+
+
+.inputviewtype2 {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 12px;
+}
+.inputviewtype2 > div:nth-child(1) { width: 90px; }
+.inputviewtype2 > div:nth-child(2) { 
+    width: calc(100% - 90px); display: flex; align-items: flex-start; justify-content: flex-start; flex-direction: column;
+    flex-wrap: wrap; gap: 4px;
+}
+.inputviewtype2 > div:nth-child(2) > div:nth-child(1) {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.inputviewtype2 > div:nth-child(2) > div:nth-child(1) > div {
+    display: flex; align-items: center; justify-content: space-between; gap: 4px;
+}
+
+.inputviewtype3 {
+    display: flex; align-items: center; justify-content: center; margin-top: 12px;
+}
+.inputviewtype3 > div {
+    width: 50%; display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.inputviewtype3 > div > div:nth-child(1)  {
+    width: 90px;
+}
+.inputviewtype3 > div > div:nth-child(2) {
+    width: calc(100% - 98px); 
+}
+
+
+.inputviewtype4 {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 12px;
+}
+.inputviewtype4 > div:nth-child(1) { width: 90px; margin-top: 11px; }
+.inputviewtype4 > div:nth-child(2) { 
+    width: calc(100% - 98px); display: flex; align-items: flex-start; justify-content: flex-start; flex-direction: column; gap: 1px;
+    
+}
+.inputviewtype4 > div:nth-child(2) > div {
+    width: 100%; gap: 1px; display: flex; align-items: flex-start; justify-content: flex-start; flex-wrap: wrap; 
+}
+
+.writeRadiobutton2 {
+    width: calc(25% - 1px); height: 40px; background-color: #EEE; color: #999;
+}
+.writeRadiobutton2.active {
+    background-color: #6164A5; color: #fff; font-weight: 700;
+}
+
+.writeRadiobutton3 {
+    width: calc(14.285714285714286% - 1px); height: 40px; background-color: #EEE; color: #999;
+}
+.writeRadiobutton3.active {
+    background-color: #6164A5; color: #fff; font-weight: 700;
+}
+
+
+.inputviewtype5 {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 12px;
+}
+.inputviewtype5 > div:nth-child(1) { width: 90px; margin-top: 11px; }
+.inputviewtype5 > div:nth-child(2) { 
+    width: calc(100% - 98px); display: flex; align-items: flex-start; justify-content: flex-start; gap: 8px;
+}
+
+
+.schduleArea > div {
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column;
+    gap: 20px; width: 100%;
+}
+.schduleArea > div > div {
+    width: 100%;
+}
+.schduleAreaselectors {
+    padding: 20px 40px; border: 1px solid #ddd; border-radius: 8px; width: 100%;
+    display: flex; align-items: flex-start; justify-content: center; flex-direction: column;
+    gap: 12px;
+}
+.schduleAreaselectors > div.datesel {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    width: 100%;
+}
+.schduleAreaselectors > div.datesel > div {
+    width: 33.33333%;
+}
+.schduleAreaselectors > div.datetimesel {
+    display: flex; align-items: center; justify-content: center; gap: 1px;
+    width: 100%;
+}
+.schduleAreaselectors > div.datetimesel > div {
+    display: flex; align-items: center; justify-content: space-between; gap: 4px;
+    font-size: 32px; font-weight: 800;
+}

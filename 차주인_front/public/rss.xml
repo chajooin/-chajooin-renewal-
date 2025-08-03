@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>차주인닷컴</title>
+    <link>https://chajooin.com/</link>
+    <description>영업용 화물차 지입차 기사구인구직 개인 직거래 중개 플랫폼입니다.</description>
+    <item>
+      <title>중고화물차</title>
+      <link>https://chajooin.com/usedCar</link>
+      <description>중고화물차 거래</description>
+    </item>
+    <item>
+      <title>지입차</title>
+      <link>https://chajooin.com/rentedCar</link>
+      <description>지입차 거래</description>
+    </item>
+  </channel>
+</rss>

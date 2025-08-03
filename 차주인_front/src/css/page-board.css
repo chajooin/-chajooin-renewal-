@@ -1,0 +1,358 @@
+.boardContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    background-color: #FFF;
+    min-height: 500px;
+}
+
+.boardContain .top-menu-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #EEE;
+}
+
+.boardContain .top-category-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.boardContain .top-category-box .line {
+    width: 1px;
+    height: 16px;
+}
+
+.boardContain .top-btn-box {
+    width: 160px;
+}
+
+.boardContain .list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boardContain .list-box .list-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #EEE;
+
+    cursor: pointer;
+}
+
+.boardContain .list-box .list-item .info {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    width: calc(100% - 128px);
+}
+
+.boardContain .list-box .list-item .info .title {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.boardContain .list-box .list-item .info .text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+
+    height: 40px;
+    overflow: hidden;
+    text-wrap: pretty;
+    text-overflow: ellipsis;
+}
+
+.boardContain .list-box .list-item .info .footter {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.boardContain .list-box .list-item img {
+    width: 108px;
+    height: 108px;
+}
+
+
+.boardContain .news-list-title {
+    background: #F2F4F7;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.boardContain .news-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 20px;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+}
+
+.boardContain .news-list-item>.title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.boardContain .news-list-item>.date {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.boardInfoContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+
+.boardInfoContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+
+    background-color: #FFF;
+    margin-top: 60px;
+}
+
+.boardInfoContain .infoBox .contentsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: #FFF;
+}
+
+.boardInfoContain .infoBox .contentsBox .user-and-menu {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #FFF;
+}
+
+.boardInfoContain .infoBox .contentsBox .user-and-menu .user-info {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.boardInfoContain .infoBox .contentsBox .user-and-menu .user-info span {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+
+.boardInfoContain .infoBox .contentsBox .title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.boardInfoContain .infoBox .contentsBox .image-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.boardInfoContain .infoBox .contentsBox .image-box img {
+    width: 100%;
+    aspect-ratio: 1.44;
+}
+
+.boardInfoContain .infoBox .comment-box {
+    padding: 20px 0px;
+    border-top: 1px solid #DDD;
+}
+
+.boardInfoContain .infoBox .comment-box .no-comment {
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    color: #999;
+}
+
+.boardInfoContain .infoBox .comment-box .count {
+    font-size: 14px;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.boardInfoContain .infoBox .comment-box .count .num {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.boardInfoContain .infoBox .comment-box .comment-item {
+    padding: 20px 0px;
+    border-bottom: 1px solid #DDD;
+}
+
+.boardInfoContain .infoBox .comment-box .comment-item .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boardInfoContain .infoBox .comment-box .comment-item .title .nick-name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.boardInfoContain .infoBox .comment-box .comment-item .title .time {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.boardInfoContain .infoBox .comment-box .comment-item .text {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.boardInfoContain .add-box {
+    display: flex;
+    width: 100%;
+
+    background: #FFF;
+    border-top: 1px solid #DDD;
+}
+
+.boardInfoContain .add-box .add-input {
+    width: 100%;
+    border: none;
+    padding: 0px 20px;
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.boardInfoContain .add-box .add-btn {
+    display: flex;
+    flex-shrink: 0;
+    width: 120px;
+    height: 64px;
+    justify-content: center;
+
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #3B4894;
+}
+
+
+/* 글쓰기 */
+
+.boardAddContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: #FFF;
+    margin: 20px 0px;
+}
+
+.boardAddContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+
+    background-color: #FFF;
+}
+
+.boardAddContain .add-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.boardAddContain .add-title {
+    font-size: 14px;
+}
+
+.boardAddContain .text-box {
+    width: 100%;
+    margin: 8px 0px;
+    height: 200px;
+    padding: 12px;
+
+    font-size: 16px;
+    border-radius: 4px;
+    border-color: #DDD;
+
+    resize: none;
+}
+
+@media (max-width: 800px) {
+    .boardContain {
+        width: 100%;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .boardContain .top-category-box {
+        gap: 12px;
+    }
+
+    .boardContain .top-btn-box {
+        width: 120px;
+    }
+
+    .input-icon-check-box>.label {
+        font-size: 14px;
+    }
+
+    .input-icon-check-box>.text {
+        font-size: 14px;
+    }
+
+
+    .boardInfoContain {
+        width: 100%;
+    }
+
+    .boardInfoContain .infoBox {
+        padding: 20px;
+    }
+
+    .boardAddContain {
+        width: 100%;
+    }
+
+    .boardAddContain .infoBox {
+        padding: 20px
+    }
+
+    .boardContain .list-box .list-item .info .title {
+        font-size: 20px;
+    }
+
+    .boardContain .list-box .list-item .info .text {
+        font-size: 14px;
+    }
+
+    .boardContain .list-box .list-item .info .footter {
+        gap: 12px;
+    }
+}

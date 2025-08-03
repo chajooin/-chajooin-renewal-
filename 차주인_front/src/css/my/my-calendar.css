@@ -1,0 +1,142 @@
+.myCalendarContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* margin: 20px 0px; */
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.myCalendarContain .infoBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+    background-color: #FFF;
+}
+
+.myCalendarContain .infoBox.mt-4 {
+    margin-top: 4px;
+}
+
+.myCalendarContain .infoBox .line {
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+}
+
+.myCalendarContain .infoBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.myCalendarContain .tab-menu-box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.myCalendarContain .tab-menu-box .tab-menu {
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #999;
+    font-size: 20px;
+    border-bottom: 1px solid #DDD;
+
+    cursor: pointer;
+}
+
+.myCalendarContain .tab-menu-box .tab-menu.select {
+    color: #3B4894;
+    font-weight: 700;
+
+    border-top: 1px solid #3B4894;
+    border-right: 1px solid #3B4894;
+    border-left: 1px solid #3B4894;
+    border-bottom: none;
+}
+
+.myCalendarContain .list-box .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    gap: 20px;
+    border-bottom: 1px solid #DDD;
+
+    cursor: pointer;
+}
+
+.myCalendarContain .list-box .list-item .title-box .title {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+
+}
+
+.myCalendarContain .list-box .list-item .title-box .title>.new {
+    background-color: red;
+    width: 21px;
+    height: 21px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.myCalendarContain .list-box .list-item .title-box .title>.name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.myCalendarContain .list-box .list-item .title-box .title.bold {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.myCalendarContain .list-box .list-item .title-box .title.sub {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+.myCalendarContain .list-box .list-item .value-box {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+    .myCalendarContain {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .myCalendarContain .infoBox {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .myCalendarContain .tab-menu-box .tab-menu {
+        font-size: 16px;
+        height: 48px;
+    }
+
+    .myCalendarContain .list-box .list-item .title-box .title.bold {
+        font-size: 16px;
+    }
+
+    .myCalendarContain .list-box .list-item .value-box .value {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,315 @@
+.quick-menu-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quick-menu-title-box>.title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.quick-menu-title-box>.btn-box {
+    width: 100px;
+}
+
+.quick-menu-noneitem {
+    padding: 20px 0px;
+    width: 100%;
+    color: #999;
+    border-bottom: 1px solid #EEE;
+}
+
+.notificationContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    background-color: #FFF;
+    gap: 20px;
+    min-height: 500px;
+}
+
+.notificationContain .list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-top: 1px solid #EEE;
+
+    cursor: pointer;
+}
+
+.notificationContain .list-item:last-child {
+    border-bottom: 1px solid #EEE;
+}
+
+.notificationContain .list-item .delete-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 60px;
+    background: url("../images/delete-bin-line.svg") no-repeat center center;
+}
+
+.notificationContain .list-item .message {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.notificationContain .list-item .message .bold {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.notificationContain .list-item .message Bold,
+b {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.notificationContain .list-item .title {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.notificationContain .list-item .sub-title {
+    margin-top: 8px;
+    color: #666;
+    font-size: 16px;
+}
+
+.notificationContain .list-item .date {
+    margin-top: 12px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* 관심 */
+.pageHeartContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    background-color: #FFF;
+    gap: 20px;
+    min-height: 500px;
+}
+
+.pageHeartContain .tab-menu-box {
+    display: flex;
+}
+
+.pageHeartContain .tab-menu-box .tab-menu {
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #999;
+    font-size: 20px;
+    border-bottom: 1px solid #DDD;
+
+    cursor: pointer;
+}
+
+.pageHeartContain .tab-menu-box .tab-menu.select {
+    color: #3B4894;
+    font-weight: 700;
+
+    border-top: 1px solid #3B4894;
+    border-right: 1px solid #3B4894;
+    border-left: 1px solid #3B4894;
+    border-bottom: none;
+}
+
+.pageHeartContain .list-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 20px 0px;
+    border-bottom: 1px solid #EEE;
+    gap: 20px;
+
+    /* cursor: pointer; */
+}
+
+.pageHeartContain .list-item .title {
+    /* margin-top: 12px; */
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pageHeartContain .list-item .sub-title {
+    margin-top: 8px;
+    color: #666;
+    font-size: 16px;
+}
+
+.pageHeartContain .list-item .heart-btn {
+    width: 20px;
+    height: 20px;
+    background: url("../images/check-heart-off.svg") no-repeat center center;
+}
+
+.pageHeartContain .list-item .heart-btn.checked {
+    width: 20px;
+    height: 20px;
+    background: url("../images/check-heart-on.svg") no-repeat center center;
+}
+
+/* 쪽지 */
+
+.pageMessageContain {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 40px;
+    margin: 20px 0px;
+    background-color: #FFF;
+    gap: 20px;
+    min-height: 500px;
+}
+
+.pageMessageContain .tab-menu-box {
+    display: flex;
+}
+
+.pageMessageContain .tab-menu-box .tab-menu {
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #999;
+    font-size: 20px;
+    border-bottom: 1px solid #DDD;
+
+    cursor: pointer;
+}
+
+.pageMessageContain .tab-menu-box .tab-menu.select {
+    color: #3B4894;
+    font-weight: 700;
+
+    border-top: 1px solid #3B4894;
+    border-right: 1px solid #3B4894;
+    border-left: 1px solid #3B4894;
+    border-bottom: none;
+}
+
+.pageMessageContain .list-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid #EEE;
+    gap: 20px;
+
+    cursor: pointer;
+}
+
+.pageMessageContain .list-item .icon-box {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+
+    border-radius: 24px;
+    border: 1px solid #EEE;
+    overflow: hidden;
+}
+
+.pageMessageContain .list-item .icon-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.pageMessageContain .list-item .info-box {
+    width: calc(100% - 199px);
+}
+
+.pageMessageContain .list-item .date {
+    width: 111px;
+    color: #666;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.pageMessageContain .list-item .name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pageMessageContain .list-item .title {
+    margin-top: 8px;
+    color: #666;
+    font-size: 16px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 800px) {
+
+    .quick-menu-title-box>.title {
+        font-size: 24px;
+    }
+
+    .notificationContain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .pageHeartContain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .pageHeartContain .tab-menu-box .tab-menu {
+        font-size: 16px;
+        aspect-ratio: 1.82;
+        height: auto;
+        max-height: 56px;
+    }
+
+    .pageHeartContain .list-item .title {
+        font-size: 16px;
+    }
+
+    .pageMessageContain {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .pageMessageContain .tab-menu-box .tab-menu {
+        font-size: 16px;
+        aspect-ratio: 1.82;
+        height: auto;
+        max-height: 56px;
+    }
+
+    .pageMessageContain .list-item {
+        gap: 10px
+    }
+
+    .pageMessageContain .list-item .info-box {
+        width: calc(100% - 179px);
+    }
+
+    .pageMessageContain .list-item .title {
+        font-size: 16px;
+    }
+
+    .pageMessageContain .list-item .date {
+        width: 74px;
+        font-size: 14px;
+        text-align: right;
+    }
+}
